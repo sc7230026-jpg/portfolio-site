@@ -1,0 +1,22 @@
+{
+  "name": "ahmad-seo-portfolio",
+  "version": "1.0.0",
+  "description": "Premium SEO Expert Portfolio Website for Ahmad",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "seo",
+    "portfolio",
+    "expert",
+    "marketing"
+  ],
+  "author": "Ahmad",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
