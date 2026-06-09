@@ -1,22 +1,21 @@
 {
-  "name": "ahmad-seo-portfolio",
+  "name": "ahmad-seo-portfolio-next",
   "version": "1.0.0",
-  "description": "Premium SEO Expert Portfolio Website for Ahmad",
-  "main": "main.js",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "seo",
-    "portfolio",
-    "expert",
-    "marketing"
-  ],
-  "author": "Ahmad",
-  "license": "ISC",
+  "dependencies": {
+    "next": "15.2.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "lucide-react": "^0.435.0"
+  },
   "devDependencies": {
-    "vite": "^6.0.0"
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.2.4"
   }
 }
