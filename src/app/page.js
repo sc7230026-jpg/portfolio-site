@@ -35,7 +35,7 @@ export default function Home() {
                 <Award size={18} /> Top Rated SEO Expert 2026
               </div>
               <h1>
-                Dominate Your Local Market with{" "}
+                Local SEO Expert in Multan – Dominate Your Market with{" "}
                 <span className="text-primary">Precision SEO.</span>
               </h1>
               <p>
