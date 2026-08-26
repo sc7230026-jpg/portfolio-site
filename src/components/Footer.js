@@ -73,6 +73,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li style={{ marginBottom: "12px" }}>
+                <Link href="/blog" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
+                  Blog Articles
+                </Link>
+              </li>
+              <li style={{ marginBottom: "12px" }}>
                 <Link href="/tools" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
                   SEO Tools
                 </Link>
@@ -83,23 +88,23 @@ export default function Footer() {
             <h4 style={{ color: "white", marginBottom: "25px", fontSize: "1.2rem" }}>Our Services</h4>
             <ul style={{ listStyle: "none", padding: "0" }}>
               <li style={{ marginBottom: "12px" }}>
-                <Link href="/services" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
-                  Local SEO
+                <Link href="/services/local-seo-multan" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
+                  Local SEO Multan
                 </Link>
               </li>
               <li style={{ marginBottom: "12px" }}>
-                <Link href="/services" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
+                <Link href="/gmb-optimization" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
                   GMB Optimization
                 </Link>
               </li>
               <li style={{ marginBottom: "12px" }}>
-                <Link href="/services" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
-                  Technical SEO
+                <Link href="/seo-audit" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
+                  Free SEO Audits
                 </Link>
               </li>
               <li style={{ marginBottom: "12px" }}>
-                <Link href="/services" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
-                  SEO Audits
+                <Link href="/contact" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none", transition: "0.3s" }}>
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -108,7 +113,7 @@ export default function Footer() {
             <h4 style={{ color: "white", marginBottom: "25px", fontSize: "1.2rem" }}>Contact Info</h4>
             <ul style={{ listStyle: "none", padding: "0" }}>
               <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "center" }}>
-                <Phone size={18} style={{ color: "var(--primary)" }} /> 03196902479
+                <Phone size={18} style={{ color: "var(--primary)" }} /> <a href="tel:+923196902479" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none" }}>03196902479</a>
               </li>
               <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "center" }}>
                 <Mail size={18} style={{ color: "var(--primary)" }} /> musk01615@gmail.com

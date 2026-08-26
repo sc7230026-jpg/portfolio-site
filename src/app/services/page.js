@@ -173,7 +173,7 @@ export default function Services() {
                 Get a free consultation and discover how we can improve your Google rankings, organic traffic, and business growth.
               </p>
               <div style={{ display: "flex", gap: "20px", marginBottom: "20px" }}>
-                <a href="tel:03196902479" className="btn btn-primary">
+                <a href="tel:+923196902479" className="btn btn-primary">
                   Call Now
                 </a>
                 <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-outline">

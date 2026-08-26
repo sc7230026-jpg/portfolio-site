@@ -31,6 +31,7 @@ export default function Navbar() {
     { name: "Results", path: "/results" },
     { name: "Packages", path: "/packages" },
     { name: "Tools", path: "/tools" },
+    { name: "Blog", path: "/blog" },
   ];
 
   return (
@@ -55,11 +56,11 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-cta">
-          <a href="tel:03196902479" className="btn btn-outline" style={{ padding: "12px 24px" }}>
+          <a href="tel:+923196902479" className="btn btn-outline" style={{ padding: "12px 24px" }}>
             Call Now
           </a>
-          <Link href="/#contact" className="btn btn-primary" style={{ padding: "12px 24px" }}>
-            Book Consultation
+          <Link href="/seo-audit" className="btn btn-primary" style={{ padding: "12px 24px" }}>
+            Free SEO Audit
           </Link>
           <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Menu">
             {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -105,7 +106,7 @@ export default function Navbar() {
           ))}
           <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "20px" }}>
             <a
-              href="tel:03196902479"
+              href="tel:+923196902479"
               className="btn btn-outline"
               style={{ justifyContent: "center", color: "white", borderColor: "white" }}
               onClick={closeMenu}
@@ -113,12 +114,12 @@ export default function Navbar() {
               Call Now
             </a>
             <Link
-              href="/#contact"
+              href="/seo-audit"
               className="btn btn-primary"
               style={{ justifyContent: "center" }}
               onClick={closeMenu}
             >
-              Book Consultation
+              Free SEO Audit
             </Link>
           </div>
         </div>
