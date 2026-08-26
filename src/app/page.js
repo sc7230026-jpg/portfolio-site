@@ -448,8 +448,8 @@ export default function Home() {
             Get ranked on Google, generate more customer enquiries, and dominate local search in Multan, Pakistan. Let&apos;s start today.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "20px" }}>
-            <a href="tel:+923196902479" className="btn" style={{ background: "white", color: "var(--primary)", padding: "16px 36px" }}>
-              <Phone size={18} fill="var(--primary)" /> Call Now: 03196902479
+            <a href="tel:+923196902479" className="btn btn-call-white" style={{ padding: "16px 36px" }} aria-label="Call Now: 03196902479">
+              <Phone size={18} /> Call Now: 03196902479
             </a>
             <a 
               href="https://wa.me/923196902479" 
@@ -485,8 +485,8 @@ export default function Home() {
               </p>
               
               <div style={{ display: "flex", gap: "20px", marginBottom: "20px" }}>
-                <a href="tel:+923196902479" className="btn btn-outline" style={{ background: "white" }}>
-                  Call Now
+                <a href="tel:+923196902479" className="btn btn-call-outline" aria-label="Call Now: 03196902479">
+                  <Phone size={16} /> Call Now
                 </a>
                 <a 
                   href="https://wa.me/923196902479" 

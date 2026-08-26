@@ -423,7 +423,7 @@ export default async function BlogPostPage({ params }) {
               <Link href="/seo-audit" className="btn btn-primary" style={{ padding: "14px 28px" }}>
                 Book Free Consultation
               </Link>
-              <a href="tel:+923196902479" className="btn btn-outline" style={{ background: "white", padding: "14px 28px" }}>
+              <a href="tel:+923196902479" className="btn btn-call-outline" style={{ padding: "14px 28px" }} aria-label="Call Now: 03196902479">
                 <Phone size={16} /> Call Now
               </a>
               <a
@@ -497,22 +497,18 @@ export default async function BlogPostPage({ params }) {
             Get a tailored search optimization audit and unlock first-page Google rankings.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
-            <Link href="/seo-audit" className="btn" style={{ background: "white", color: "var(--primary)", padding: "16px 36px" }}>
+            <Link href="/seo-audit" className="btn btn-call-white" style={{ padding: "16px 36px" }}>
               Book Free Consultation <ArrowRight size={18} />
             </Link>
             <a
               href="tel:+923196902479"
-              className="btn"
+              className="btn btn-call-dark"
               style={{
-                background: "var(--dark)",
-                color: "white",
                 padding: "16px 36px",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "10px",
               }}
+              aria-label="Call Now: 03196902479"
             >
-              <Phone size={18} fill="white" /> Call Now: 03196902479
+              <Phone size={18} /> Call Now: 03196902479
             </a>
           </div>
         </div>

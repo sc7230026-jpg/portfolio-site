@@ -300,22 +300,18 @@ export default function BlogPage() {
             Don&apos;t just read about SEO — let Ahmad SEO implement a custom, data-driven local SEO roadmap for your business.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
-            <Link href="/seo-audit" className="btn" style={{ background: "white", color: "var(--primary)", padding: "16px 36px" }}>
+            <Link href="/seo-audit" className="btn btn-call-white" style={{ padding: "16px 36px" }}>
               Book Free Consultation <ArrowRight size={18} />
             </Link>
             <a
               href="tel:+923196902479"
-              className="btn"
+              className="btn btn-call-dark"
               style={{
-                background: "var(--dark)",
-                color: "white",
                 padding: "16px 36px",
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "10px",
               }}
+              aria-label="Call Now: 03196902479"
             >
-              <Phone size={18} fill="white" /> Call Now: 03196902479
+              <Phone size={18} /> Call Now: 03196902479
             </a>
             <a
               href="https://wa.me/923196902479"

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Monitor, Bell, Code, PenTool, Star, Check, ArrowRight, CheckCircle } from "lucide-react";
+import { Search, Monitor, Bell, Code, PenTool, Star, Check, ArrowRight, CheckCircle, Phone } from "lucide-react";
 
 export default function Services() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
@@ -173,8 +173,8 @@ export default function Services() {
                 Get a free consultation and discover how we can improve your Google rankings, organic traffic, and business growth.
               </p>
               <div style={{ display: "flex", gap: "20px", marginBottom: "20px" }}>
-                <a href="tel:+923196902479" className="btn btn-primary">
-                  Call Now
+                <a href="tel:+923196902479" className="btn btn-primary" aria-label="Call Now: 03196902479">
+                  <Phone size={16} /> Call Now
                 </a>
                 <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
                   WhatsApp

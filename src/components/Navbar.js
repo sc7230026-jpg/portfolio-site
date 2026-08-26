@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -56,8 +56,8 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-cta">
-          <a href="tel:+923196902479" className="btn btn-outline" style={{ padding: "12px 24px" }}>
-            Call Now
+          <a href="tel:+923196902479" className="btn btn-call-nav" style={{ padding: "12px 24px" }} aria-label="Call Now: 03196902479">
+            <Phone size={16} /> Call Now
           </a>
           <Link href="/seo-audit" className="btn btn-primary" style={{ padding: "12px 24px" }}>
             Free SEO Audit
@@ -107,11 +107,12 @@ export default function Navbar() {
           <div style={{ display: "flex", flexDirection: "column", gap: "15px", marginTop: "20px" }}>
             <a
               href="tel:+923196902479"
-              className="btn btn-outline"
-              style={{ justifyContent: "center", color: "white", borderColor: "white" }}
+              className="btn btn-call-nav"
+              style={{ justifyContent: "center" }}
               onClick={closeMenu}
+              aria-label="Call Now: 03196902479"
             >
-              Call Now
+              <Phone size={16} /> Call Now
             </a>
             <Link
               href="/seo-audit"
