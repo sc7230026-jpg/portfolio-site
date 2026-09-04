@@ -117,7 +117,7 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="hero" id="home" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #FFF5F0 100%)", padding: "140px 0 100px" }}>
+      <section className="hero" id="home" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, var(--light) 100%)", padding: "140px 0 100px" }}>
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
@@ -185,7 +185,7 @@ export default function Home() {
                   background: "linear-gradient(135deg, var(--dark) 0%, var(--dark-alt) 100%)",
                   padding: "40px",
                   boxShadow: "0 30px 60px rgba(0,0,0,0.15)",
-                  border: "2px solid rgba(255, 107, 0, 0.2)"
+                  border: "2px solid rgba(20, 101, 216, 0.2)"
                 }}
               >
                 {/* Ranking Chart Header */}
@@ -194,7 +194,7 @@ export default function Home() {
                     <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "1px" }}>Google Rank Performance</span>
                     <h3 style={{ color: "white", fontSize: "1.4rem", margin: "5px 0 0" }}>Local Rank Tracker</h3>
                   </div>
-                  <span style={{ background: "rgba(255,107,0,0.1)", color: "var(--primary)", padding: "5px 12px", borderRadius: "8px", fontSize: "0.8rem", fontWeight: "700" }}>Multan, PK</span>
+                  <span style={{ background: "rgba(20, 101, 216,0.1)", color: "var(--primary)", padding: "5px 12px", borderRadius: "8px", fontSize: "0.8rem", fontWeight: "700" }}>Multan, PK</span>
                 </div>
 
                 {/* Simulated Chart */}
@@ -212,7 +212,7 @@ export default function Home() {
                     <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.7rem", marginTop: "8px" }}>Month 2</span>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                    <div style={{ height: "110px", width: "100%", background: "rgba(255, 107, 0, 0.4)", borderRadius: "6px" }}></div>
+                    <div style={{ height: "110px", width: "100%", background: "rgba(20, 101, 216, 0.4)", borderRadius: "6px" }}></div>
                     <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.7rem", marginTop: "8px" }}>Month 3</span>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
@@ -441,7 +441,7 @@ export default function Home() {
       </section>
 
       {/* Strong CTA Section */}
-      <section style={{ background: "linear-gradient(135deg, #FF6B00 0%, #E65C00 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
         <div className="container">
           <h2 style={{ fontSize: "2.8rem", fontWeight: "800", marginBottom: "20px", color: "white" }}>Ready to Scale Your Business?</h2>
           <p style={{ fontSize: "1.2rem", maxWidth: "650px", margin: "0 auto 40px", color: "rgba(255,255,255,0.9)", lineHeight: "1.7" }}>

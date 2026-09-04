@@ -27,7 +27,7 @@ export default function SeoAudit() {
   return (
     <main>
       {/* Hero */}
-      <section style={{ background: "linear-gradient(180deg, #FFF5F0 0%, #FFFFFF 100%)", padding: "120px 0 80px" }}>
+      <section style={{ background: "linear-gradient(180deg, var(--light) 0%, #FFFFFF 100%)", padding: "120px 0 80px" }}>
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
             <div>
@@ -128,7 +128,7 @@ export default function SeoAudit() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "linear-gradient(135deg, #FF6B00 0%, #E65C00 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
         <div className="container">
           <h2 style={{ fontSize: "2.5rem", fontWeight: "800", marginBottom: "20px", color: "white" }}>Don&apos;t Guess — Know Exactly Where You Stand</h2>
           <p style={{ fontSize: "1.15rem", maxWidth: "600px", margin: "0 auto 40px", color: "rgba(255,255,255,0.9)" }}>

@@ -17,7 +17,7 @@ export default function BlogPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section style={{ background: "linear-gradient(180deg, #FFF5F0 0%, #FFFFFF 100%)", padding: "120px 0 60px" }}>
+      <section style={{ background: "linear-gradient(180deg, var(--light) 0%, #FFFFFF 100%)", padding: "120px 0 60px" }}>
         <div className="container text-center">
           <div className="badge">
             <BookOpen size={16} /> SEO Knowledge Hub
@@ -74,7 +74,7 @@ export default function BlogPage() {
                 display: "grid",
                 gridTemplateColumns: "1.1fr 1fr",
                 gap: "40px",
-                border: "1px solid rgba(255, 107, 0, 0.2)",
+                border: "1px solid rgba(20, 101, 216, 0.2)",
                 boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
               }}
             >
@@ -133,8 +133,8 @@ export default function BlogPage() {
                     height: "100%",
                     minHeight: "260px",
                     borderRadius: "20px",
-                    background: "linear-gradient(135deg, rgba(255, 107, 0, 0.15) 0%, rgba(255, 107, 0, 0.02) 100%)",
-                    border: "2px dashed rgba(255, 107, 0, 0.4)",
+                    background: "linear-gradient(135deg, rgba(20, 101, 216, 0.15) 0%, rgba(20, 101, 216, 0.02) 100%)",
+                    border: "2px dashed rgba(20, 101, 216, 0.4)",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -187,7 +187,7 @@ export default function BlogPage() {
                 <div
                   style={{
                     height: "180px",
-                    background: "linear-gradient(135deg, var(--light) 0%, #FFF5F0 100%)",
+                    background: "linear-gradient(135deg, var(--light) 0%, var(--light) 100%)",
                     borderBottom: "1px solid #eee",
                     display: "flex",
                     alignItems: "center",
@@ -291,7 +291,7 @@ export default function BlogPage() {
       </section>
 
       {/* High-Converting CTA Banner */}
-      <section style={{ background: "linear-gradient(135deg, #FF6B00 0%, #E65C00 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
         <div className="container">
           <h2 style={{ fontSize: "2.6rem", fontWeight: "800", marginBottom: "20px", color: "white" }}>
             Ready to Dominate Your Local Search Results?

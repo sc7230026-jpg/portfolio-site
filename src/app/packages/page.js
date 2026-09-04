@@ -89,7 +89,7 @@ export default function Packages() {
                   border: plan.highlight ? "3px solid var(--primary)" : "1px solid #EEEEEE",
                   position: "relative",
                   transform: plan.highlight ? "scale(1.03)" : "none",
-                  boxShadow: plan.highlight ? "0 20px 40px rgba(255, 107, 0, 0.1)" : "var(--shadow)",
+                  boxShadow: plan.highlight ? "0 20px 40px rgba(20, 101, 216, 0.1)" : "var(--shadow)",
                 }}
               >
                 {plan.highlight && (
@@ -102,7 +102,7 @@ export default function Packages() {
                       transform: "translateX(-50%)",
                       background: "var(--primary)",
                       color: "white",
-                      boxShadow: "0 10px 20px rgba(255, 107, 0, 0.2)",
+                      boxShadow: "0 10px 20px rgba(20, 101, 216, 0.2)",
                     }}
                   >
                     Most Popular

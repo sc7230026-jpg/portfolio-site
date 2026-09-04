@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <main>
       {/* Hero */}
-      <section style={{ background: "linear-gradient(180deg, #FFF5F0 0%, #FFFFFF 100%)", padding: "120px 0 60px" }}>
+      <section style={{ background: "linear-gradient(180deg, var(--light) 0%, #FFFFFF 100%)", padding: "120px 0 60px" }}>
         <div className="container text-center">
           <div className="badge"><MapPin size={16} /> Get In Touch</div>
           <h1 style={{ fontSize: "3rem", marginBottom: "20px" }}>

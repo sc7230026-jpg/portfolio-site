@@ -26,7 +26,7 @@ export default function GmbOptimization() {
   return (
     <main>
       {/* Hero */}
-      <section style={{ background: "linear-gradient(180deg, #FFF5F0 0%, #FFFFFF 100%)", padding: "120px 0 80px" }}>
+      <section style={{ background: "linear-gradient(180deg, var(--light) 0%, #FFFFFF 100%)", padding: "120px 0 80px" }}>
         <div className="container">
           <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
             <div className="badge"><MapPin size={16} /> Google Business Profile Expert</div>
@@ -109,7 +109,7 @@ export default function GmbOptimization() {
       </section>
 
       {/* CTA */}
-      <section style={{ background: "linear-gradient(135deg, #FF6B00 0%, #E65C00 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
         <div className="container">
           <h2 style={{ fontSize: "2.5rem", fontWeight: "800", marginBottom: "20px", color: "white" }}>Get Your GMB Profile Optimized Today</h2>
           <p style={{ fontSize: "1.15rem", maxWidth: "600px", margin: "0 auto 40px", color: "rgba(255,255,255,0.9)" }}>

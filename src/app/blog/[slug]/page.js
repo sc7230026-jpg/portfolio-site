@@ -274,7 +274,7 @@ export default async function BlogPostPage({ params }) {
       />
 
       {/* Hero / Header Section */}
-      <section style={{ background: "linear-gradient(180deg, #FFF5F0 0%, #FFFFFF 100%)", padding: "120px 0 50px" }}>
+      <section style={{ background: "linear-gradient(180deg, var(--light) 0%, #FFFFFF 100%)", padding: "120px 0 50px" }}>
         <div className="container" style={{ maxWidth: "880px" }}>
           {/* Breadcrumbs */}
           <nav aria-label="Breadcrumb" style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.88rem", color: "var(--text-muted)", marginBottom: "30px", flexWrap: "wrap" }}>
@@ -337,7 +337,7 @@ export default async function BlogPostPage({ params }) {
               height: "320px",
               borderRadius: "24px",
               background: "linear-gradient(135deg, var(--dark) 0%, #1c1c1c 100%)",
-              border: "1px solid rgba(255, 107, 0, 0.2)",
+              border: "1px solid rgba(20, 101, 216, 0.2)",
               boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
               display: "flex",
               flexDirection: "column",
@@ -405,7 +405,7 @@ export default async function BlogPostPage({ params }) {
           {/* In-Article Action Box */}
           <div
             style={{
-              background: "linear-gradient(135deg, var(--light) 0%, #FFF5F0 100%)",
+              background: "linear-gradient(135deg, var(--light) 0%, var(--light) 100%)",
               padding: "40px",
               borderRadius: "24px",
               border: "2px solid var(--primary-glow)",
@@ -488,7 +488,7 @@ export default async function BlogPostPage({ params }) {
       )}
 
       {/* Final Conversion CTA Section */}
-      <section style={{ background: "linear-gradient(135deg, #FF6B00 0%, #E65C00 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
+      <section style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
         <div className="container">
           <h2 style={{ fontSize: "2.6rem", fontWeight: "800", marginBottom: "18px", color: "white" }}>
             Ready to Scale Your Online Revenue?

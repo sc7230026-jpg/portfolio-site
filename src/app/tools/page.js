@@ -207,7 +207,7 @@ export default function Tools() {
                   color: "white",
                   padding: "15px 25px",
                   borderRadius: "15px",
-                  boxShadow: "0 10px 20px rgba(255,107,0,0.2)",
+                  boxShadow: "0 10px 20px rgba(20, 101, 216,0.2)",
                   zIndex: 3,
                 }}
               >
