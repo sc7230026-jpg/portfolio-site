@@ -136,7 +136,7 @@ export default function SeoAudit() {
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
             <a href="tel:+923196902479" className="btn btn-call-white" aria-label="Call Now: 03196902479"><Phone size={18} /> Call: 03196902479</a>
-            <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-call-dark"><MessageSquare size={18} /> WhatsApp Now</a>
+            <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp"><MessageSquare size={18} /> WhatsApp Now</a>
           </div>
         </div>
       </section>

@@ -58,7 +58,7 @@ export default function Contact() {
 
                 <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "15px", textDecoration: "none", color: "var(--dark)", padding: "20px", background: "var(--light)", borderRadius: "16px", transition: "0.3s" }}>
                   <div style={{ width: "50px", height: "50px", background: "rgba(37, 211, 102, 0.1)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <MessageSquare size={22} style={{ color: "#25D366" }} />
+                    <MessageSquare size={22} style={{ color: "var(--primary)" }} />
                   </div>
                   <div>
                     <strong style={{ display: "block" }}>WhatsApp</strong>

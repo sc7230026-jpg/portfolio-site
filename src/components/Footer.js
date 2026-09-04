@@ -40,7 +40,7 @@ export default function Footer() {
                 href="https://wa.me/923196902479"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "white", fontSize: "1.2rem", display: "flex", alignItems: "center", justifyContent: "center" }}
+                className="whatsapp-footer"
                 title="WhatsApp"
               >
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -112,14 +112,14 @@ export default function Footer() {
           <div>
             <h4 style={{ color: "white", marginBottom: "25px", fontSize: "1.2rem" }}>Contact Info</h4>
             <ul style={{ listStyle: "none", padding: "0" }}>
-              <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "center" }}>
-                <Phone size={18} style={{ color: "var(--primary)" }} /> <a href="tel:+923196902479" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none" }}>03196902479</a>
+              <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                <Phone size={18} style={{ color: "var(--primary)", flexShrink: 0, marginTop: "4px" }} /> <a href="tel:+923196902479" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "none" }}>+92 319 6902479</a>
               </li>
-              <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "center" }}>
-                <Mail size={18} style={{ color: "var(--primary)" }} /> musk01615@gmail.com
+              <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                <Mail size={18} style={{ color: "var(--primary)", flexShrink: 0, marginTop: "4px" }} /> musk01615@gmail.com
               </li>
-              <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "center" }}>
-                <MapPin size={18} style={{ color: "var(--primary)" }} /> Multan, Pakistan
+              <li style={{ marginBottom: "12px", color: "rgba(255,255,255,0.7)", display: "flex", gap: "10px", alignItems: "flex-start", lineHeight: "1.5" }}>
+                <MapPin size={18} style={{ color: "var(--primary)", flexShrink: 0, marginTop: "4px" }} /> Shop #8, Pracha Street, Chowk B.C.G., Gulzaib Colony, Multan, 60000, Pakistan
               </li>
             </ul>
           </div>

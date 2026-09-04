@@ -139,18 +139,15 @@ export default function Home() {
                   href="https://wa.me/923196902479" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="btn btn-outline" 
+                  className="btn btn-whatsapp" 
                   style={{ 
                     padding: "16px 30px", 
                     display: "inline-flex", 
                     alignItems: "center", 
-                    gap: "10px",
-                    background: "#25D366",
-                    color: "white",
-                    border: "none"
+                    gap: "10px"
                   }}
                 >
-                  <MessageSquare size={18} fill="white" /> Chat on WhatsApp Now
+                  <MessageSquare size={18} /> Chat on WhatsApp Now
                 </a>
               </div>
 
@@ -455,17 +452,15 @@ export default function Home() {
               href="https://wa.me/923196902479" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn" 
+              className="btn btn-whatsapp" 
               style={{ 
-                background: "var(--dark)", 
-                color: "white", 
                 padding: "16px 36px",
                 display: "inline-flex",
                 alignItems: "center",
                 gap: "10px"
               }}
             >
-              <MessageSquare size={18} fill="white" /> Chat on WhatsApp Now
+              <MessageSquare size={18} /> Chat on WhatsApp Now
             </a>
           </div>
         </div>
@@ -492,7 +487,7 @@ export default function Home() {
                   href="https://wa.me/923196902479" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="btn btn-primary"
+                  className="btn btn-whatsapp"
                 >
                   WhatsApp Us
                 </a>

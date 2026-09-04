@@ -38,7 +38,7 @@ export default function GmbOptimization() {
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap" }}>
               <Link href="/#contact" className="btn btn-primary">Get GMB Optimization <ArrowRight size={18} /></Link>
-              <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: "#25D366", color: "white", border: "none" }}>
+              <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: "var(--primary)", color: "white", border: "none" }}>
                 <MessageSquare size={18} fill="white" /> WhatsApp Now
               </a>
             </div>
@@ -117,7 +117,7 @@ export default function GmbOptimization() {
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
             <a href="tel:+923196902479" className="btn btn-call-white" aria-label="Call Now: 03196902479"><Phone size={18} /> Call: 03196902479</a>
-            <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-call-dark"><MessageSquare size={18} /> WhatsApp Now</a>
+            <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp"><MessageSquare size={18} /> WhatsApp Now</a>
           </div>
         </div>
       </section>

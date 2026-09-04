@@ -430,10 +430,10 @@ export default async function BlogPostPage({ params }) {
                 href="https://wa.me/923196902479"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn"
-                style={{ background: "#25D366", color: "white", padding: "14px 28px", display: "inline-flex", alignItems: "center", gap: "8px" }}
+                className="btn btn-whatsapp"
+                style={{ padding: "14px 28px", display: "inline-flex", alignItems: "center", gap: "8px" }}
               >
-                <MessageSquare size={16} fill="white" /> WhatsApp Us
+                <MessageSquare size={16} /> WhatsApp Us
               </a>
             </div>
           </div>
@@ -502,7 +502,7 @@ export default async function BlogPostPage({ params }) {
             </Link>
             <a
               href="tel:+923196902479"
-              className="btn btn-call-dark"
+              className="btn btn-whatsapp"
               style={{
                 padding: "16px 36px",
               }}

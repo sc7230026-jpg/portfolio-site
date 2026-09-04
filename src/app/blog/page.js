@@ -305,7 +305,7 @@ export default function BlogPage() {
             </Link>
             <a
               href="tel:+923196902479"
-              className="btn btn-call-dark"
+              className="btn btn-whatsapp"
               style={{
                 padding: "16px 36px",
               }}
@@ -317,18 +317,15 @@ export default function BlogPage() {
               href="https://wa.me/923196902479"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn"
+              className="btn btn-whatsapp"
               style={{
-                background: "#25D366",
-                color: "white",
-                border: "none",
                 padding: "16px 36px",
-                display: "inline-flex",
+                display: "flex",
                 alignItems: "center",
-                gap: "10px",
+                gap: "10px"
               }}
             >
-              <MessageSquare size={18} fill="white" /> Chat on WhatsApp
+              <MessageSquare size={18} /> Chat on WhatsApp
             </a>
           </div>
         </div>

@@ -215,10 +215,10 @@ section {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(6, 43, 82, 0.96);
     backdrop-filter: blur(15px);
     padding: 18px 0;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     transition: var(--transition);
 }
 
@@ -235,7 +235,7 @@ section {
 .logo {
     font-size: 1.7rem;
     font-weight: 800;
-    color: var(--dark-navy) !important;
+    color: var(--white) !important;
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -253,7 +253,7 @@ section {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-main);
+    color: var(--white);
     font-weight: 600;
     font-size: 0.95rem;
     transition: var(--transition);
@@ -275,7 +275,7 @@ section {
     background: none;
     border: none;
     cursor: pointer;
-    color: var(--dark-navy);
+    color: var(--white);
 }
 
 /* Hero Section */
@@ -356,7 +356,7 @@ section {
 .social-profile-item {
     width: 45px;
     height: 45px;
-    background: var(--light);
+    background: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -763,7 +763,7 @@ input, textarea {
     border: 1px solid var(--border);
     font-family: inherit;
     font-size: 1rem;
-    background: var(--light);
+    background: var(--white);
     color: var(--text-main);
     transition: var(--transition);
 }
@@ -907,7 +907,7 @@ footer {
 /* FAQ Section */
 .faq-section {
     padding: 100px 0;
-    background: var(--light);
+    background: var(--white);
 }
 .faq-item {
     background: white;
@@ -955,4 +955,39 @@ footer {
 .scroll-top-btn:hover {
     transform: translateY(-5px);
     background: var(--navy);
+}
+/* WhatsApp Button Override */
+.btn-whatsapp {
+    background: var(--white) !important;
+    color: var(--primary) !important;
+    border: 2px solid var(--border) !important;
+    transition: var(--transition);
+}
+.btn-whatsapp:hover {
+    background: var(--light-blue) !important;
+    color: var(--dark-navy) !important;
+    border-color: var(--border) !important;
+}
+.btn-whatsapp svg {
+    stroke: var(--primary) !important;
+    color: var(--primary) !important;
+}
+.btn-whatsapp:hover svg {
+    stroke: var(--dark-navy) !important;
+    color: var(--dark-navy) !important;
+}
+.whatsapp-footer {
+    background: var(--white) !important;
+    color: var(--primary) !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+.whatsapp-footer:hover {
+    background: var(--light-blue) !important;
+    color: var(--dark-navy) !important;
 }
