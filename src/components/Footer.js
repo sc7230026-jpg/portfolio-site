@@ -126,7 +126,7 @@ export default function Footer() {
         </div>
         <div className="footer-bottom" style={{ marginTop: "0", paddingTop: "30px", borderTop: "1px solid rgba(255,255,255,0.1)", textAlign: "center" }}>
           <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.9rem" }}>
-            &copy; 2026 AhmadSEO. All rights reserved. Professional SEO Expert in Multan.
+            &copy; 2026 Ahmad Local SEO Expert. All rights reserved. Professional SEO Expert in Multan.
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MapPin, Check, ArrowRight, Star, Phone, MessageSquare, TrendingUp, Search, Shield } from "lucide-react";
 
 export const metadata = {
-  title: "Google My Business (GMB) Optimization | Rank in Google Maps | Ahmad SEO",
+  title: "Google My Business (GMB) Optimization | Rank in Google Maps | Ahmad Local SEO Expert",
   description: "Professional Google Business Profile optimization services in Multan. Get ranked in Google Maps Local 3-Pack, generate more calls, and dominate local search results.",
 };
 
@@ -17,10 +17,10 @@ export default function GmbOptimization() {
   ];
 
   const results = [
-    { metric: "350%", label: "Increase in GMB Views", icon: "👁️" },
-    { metric: "240%", label: "More Phone Calls", icon: "📞" },
-    { metric: "180%", label: "Direction Requests Growth", icon: "📍" },
-    { metric: "95%", label: "Client Satisfaction Rate", icon: "⭐" },
+    { metric: "350%", label: "Increase in GMB Views" },
+    { metric: "240%", label: "More Phone Calls" },
+    { metric: "180%", label: "Direction Requests Growth" },
+    { metric: "95%", label: "Client Satisfaction Rate" },
   ];
 
   return (
@@ -38,8 +38,8 @@ export default function GmbOptimization() {
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap" }}>
               <Link href="/#contact" className="btn btn-primary">Get GMB Optimization <ArrowRight size={18} /></Link>
-              <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: "var(--primary)", color: "white", border: "none" }}>
-                <MessageSquare size={18} fill="white" /> WhatsApp Now
+              <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+                <MessageSquare size={18} /> WhatsApp Now
               </a>
             </div>
           </div>
@@ -52,7 +52,6 @@ export default function GmbOptimization() {
           <div className="stats-grid" style={{ textAlign: "center" }}>
             {results.map((r, i) => (
               <div key={i} className="stat-item">
-                <span style={{ fontSize: "2rem", display: "block", marginBottom: "5px" }}>{r.icon}</span>
                 <span className="stat-number" style={{ color: "var(--primary)", fontSize: "2.5rem" }}>{r.metric}</span>
                 <span className="stat-label" style={{ color: "rgba(255,255,255,0.7)" }}>{r.label}</span>
               </div>

@@ -17,6 +17,22 @@ import {
   Star,
   BookOpen
 } from "lucide-react";
+import { useInView } from "@/hooks/useInView";
+import CountUp from "@/components/CountUp";
+
+/* ─── Small helper: applies anim-fade-up + visible class + stagger delay ─── */
+function FadeUp({ children, delay = 0, className = "", style = {}, tag: Tag = "div" }) {
+  const [ref, isVisible] = useInView({ threshold: 0.12 });
+  return (
+    <Tag
+      ref={ref}
+      className={`anim-fade-up${isVisible ? " visible" : ""} ${className}`.trim()}
+      style={{ "--anim-delay": `${delay}s`, ...style }}
+    >
+      {children}
+    </Tag>
+  );
+}
 
 export default function Home() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" });
@@ -114,24 +130,38 @@ export default function Home() {
     }
   ];
 
+  /* Stat items with count-up values */
+  const stats = [
+    { value: "200+", label: "Multan GMB Listings Ranked" },
+    { value: "98%",  label: "Success Retention Rate" },
+    { value: "5M+",  label: "Organic Impressions Driven" },
+    { value: "7+ Years", label: "Search Marketing Experience" },
+  ];
+
   return (
     <main>
-      {/* Hero Section */}
+      {/* ── Hero Section ────────────────────────────────────────── */}
       <section className="hero" id="home" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, var(--light) 100%)", padding: "140px 0 100px" }}>
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <div className="badge">
+              {/* Badge — hero-anim-0: fires immediately on load */}
+              <div className="badge hero-anim-0">
                 <Award size={16} /> Certified Google SEO Expert in Multan
               </div>
-              <h1 style={{ fontSize: "3.5rem", fontWeight: "800", color: "var(--dark)", marginBottom: "24px", lineHeight: "1.15" }}>
+
+              {/* Heading — hero-anim-1 */}
+              <h1 className="hero-anim-1" style={{ fontSize: "3.5rem", fontWeight: "800", color: "var(--dark)", marginBottom: "24px", lineHeight: "1.15" }}>
                 Local SEO Expert in Multan – Dominate Your Market with <span className="text-primary">Precision SEO</span>
               </h1>
-              <p style={{ fontSize: "1.15rem", color: "var(--text-muted)", marginBottom: "35px", lineHeight: "1.7" }}>
+
+              {/* Description — hero-anim-2 */}
+              <p className="hero-anim-2" style={{ fontSize: "1.15rem", color: "var(--text-muted)", marginBottom: "35px", lineHeight: "1.7" }}>
                 Double your organic leads and traffic. I help local businesses in Multan and across Pakistan rank on the first page of Google through professional Local SEO services and Google Business Profile optimization.
               </p>
               
-              <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+              {/* CTA Buttons — hero-anim-3 */}
+              <div className="hero-btns hero-anim-3" style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
                 <a href="#contact" className="btn btn-primary" style={{ padding: "16px 30px" }}>
                   Book Free Consultation <ArrowRight size={18} />
                 </a>
@@ -151,13 +181,13 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* Trust signals */}
-              <div style={{ display: "flex", gap: "30px", marginTop: "40px", flexWrap: "wrap" }}>
+              {/* Trust signals — hero-anim-4 */}
+              <div className="hero-anim-4" style={{ display: "flex", gap: "30px", marginTop: "40px", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                   <ShieldCheck size={28} className="text-primary" />
                   <div>
                     <strong style={{ display: "block", fontSize: "1rem" }}>Certified SEO Expert</strong>
-                    <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Google & Semrush Accredited</span>
+                    <span style={{ fontSize: "0.85rem", color: "var(--text-muted)" }}>Google &amp; Semrush Accredited</span>
                   </div>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -170,9 +200,10 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Visual Graphic Section */}
+            {/* Visual Graphic — floating animation */}
             <div className="hero-image" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
               <div 
+                className="hero-graphic-float"
                 style={{ 
                   position: "relative",
                   width: "100%",
@@ -182,7 +213,7 @@ export default function Home() {
                   background: "linear-gradient(135deg, var(--dark) 0%, var(--dark-alt) 100%)",
                   padding: "40px",
                   boxShadow: "0 30px 60px rgba(0,0,0,0.15)",
-                  border: "2px solid rgba(20, 101, 216, 0.2)"
+                  border: "2px solid rgba(16, 96, 208, 0.2)"
                 }}
               >
                 {/* Ranking Chart Header */}
@@ -191,7 +222,7 @@ export default function Home() {
                     <span style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "1px" }}>Google Rank Performance</span>
                     <h3 style={{ color: "white", fontSize: "1.4rem", margin: "5px 0 0" }}>Local Rank Tracker</h3>
                   </div>
-                  <span style={{ background: "rgba(20, 101, 216,0.1)", color: "var(--primary)", padding: "5px 12px", borderRadius: "8px", fontSize: "0.8rem", fontWeight: "700" }}>Multan, PK</span>
+                  <span style={{ background: "rgba(16, 96, 208, 0.15)", color: "var(--primary)", padding: "5px 12px", borderRadius: "8px", fontSize: "0.8rem", fontWeight: "700" }}>Multan, PK</span>
                 </div>
 
                 {/* Simulated Chart */}
@@ -209,7 +240,7 @@ export default function Home() {
                     <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.7rem", marginTop: "8px" }}>Month 2</span>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
-                    <div style={{ height: "110px", width: "100%", background: "rgba(20, 101, 216, 0.4)", borderRadius: "6px" }}></div>
+                    <div style={{ height: "110px", width: "100%", background: "rgba(16, 96, 208, 0.4)", borderRadius: "6px" }}></div>
                     <span style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.7rem", marginTop: "8px" }}>Month 3</span>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
@@ -221,10 +252,10 @@ export default function Home() {
                 {/* Floating Keywords */}
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "20px" }}>
                   <span style={{ fontSize: "0.75rem", background: "rgba(255,255,255,0.05)", color: "white", padding: "6px 12px", borderRadius: "100px", border: "1px solid rgba(255,255,255,0.1)" }}>
-                    📍 SEO Expert in Multan <strong style={{ color: "var(--primary)" }}>#1</strong>
+                    SEO Expert in Multan <strong style={{ color: "var(--primary)" }}>#1</strong>
                   </span>
                   <span style={{ fontSize: "0.75rem", background: "rgba(255,255,255,0.05)", color: "white", padding: "6px 12px", borderRadius: "100px", border: "1px solid rgba(255,255,255,0.1)" }}>
-                    🚀 Local SEO Pakistan <strong style={{ color: "var(--primary)" }}>#1</strong>
+                    Local SEO Pakistan <strong style={{ color: "var(--primary)" }}>#1</strong>
                   </span>
                 </div>
               </div>
@@ -233,12 +264,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Location Targeting Info Row */}
+      {/* ── Location Targeting Row ───────────────────────────────── */}
       <section style={{ background: "var(--dark)", padding: "30px 0", color: "white" }}>
         <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "20px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <MapPin size={24} className="text-primary" />
-            <span>Targeting Customers in <strong>Multan, Punjab, Pakistan</strong> & Globally</span>
+            <span>Targeting Customers in <strong>Multan, Punjab, Pakistan</strong> &amp; Globally</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <Globe size={24} className="text-primary" />
@@ -247,44 +278,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* ── Stats Section ────────────────────────────────────────── */}
       <section className="stats" style={{ padding: "80px 0", background: "var(--light)" }}>
         <div className="container">
           <div className="stats-grid">
-            <div className="stat-item">
-              <span className="stat-number">200+</span>
-              <span className="stat-label">Multan GMB Listings Ranked</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">98%</span>
-              <span className="stat-label">Success Retention Rate</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">5M+</span>
-              <span className="stat-label">Organic Impressions Driven</span>
-            </div>
-            <div className="stat-item">
-              <span className="stat-number">7+ Years</span>
-              <span className="stat-label">Search Marketing Experience</span>
-            </div>
+            {stats.map((stat, idx) => (
+              <FadeUp key={idx} delay={idx * 0.1} className="stat-item">
+                <span className="stat-number">
+                  <CountUp value={stat.value} duration={1800} />
+                </span>
+                <span className="stat-label">{stat.label}</span>
+              </FadeUp>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* ── Services Section ─────────────────────────────────────── */}
       <section className="section-padding" id="services">
         <div className="container">
-          <div className="text-center">
+          <FadeUp className="text-center">
             <div className="badge">Our SEO Expertise</div>
             <h2 className="section-title">Result-Oriented Local SEO Services</h2>
             <p className="section-subtitle">
               Rank higher, drive organic store visits, and capture ready-to-buy search queries in Multan.
             </p>
-          </div>
+          </FadeUp>
 
           <div className="services-grid">
             {services.map((svc, idx) => (
-              <article key={idx} className="service-card" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+              <FadeUp key={idx} delay={Math.min(idx * 0.1, 0.4)} tag="article" className="service-card" style={{ display: "flex", flexDirection: "column", height: "100%" }}>
                 <div className="service-icon" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <Search size={28} />
                 </div>
@@ -303,26 +326,26 @@ export default function Home() {
                 <Link href={svc.path} className="service-cta">
                   Learn More <ArrowRight size={16} />
                 </Link>
-              </article>
+              </FadeUp>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Case Studies / Results Section */}
+      {/* ── Case Studies / Results Section ──────────────────────── */}
       <section className="section-padding" style={{ background: "var(--light)" }}>
         <div className="container">
-          <div className="text-center">
+          <FadeUp className="text-center">
             <div className="badge">Proven SEO Results</div>
             <h2 className="section-title">Real Growth Stories in Multan</h2>
             <p className="section-subtitle">
               See how we optimized local businesses to capture first-page real estate on Google.
             </p>
-          </div>
+          </FadeUp>
 
           <div className="case-grid">
             {caseStudies.map((cs, idx) => (
-              <div key={idx} className="case-card" style={{ background: "white", borderRadius: "24px", overflow: "hidden", border: "1px solid #eee" }}>
+              <FadeUp key={idx} delay={idx * 0.15} className="case-card" style={{ background: "white", borderRadius: "24px", overflow: "hidden", border: "1px solid #eee" }}>
                 <div style={{ background: "var(--dark)", padding: "30px", color: "white" }}>
                   <span className="case-tag" style={{ background: "var(--primary-glow)", color: "var(--primary)", marginBottom: "15px" }}>{cs.niche}</span>
                   <h3 style={{ fontSize: "1.8rem", color: "white", margin: 0 }}>{cs.growth}</h3>
@@ -356,25 +379,25 @@ export default function Home() {
                     View Full Case Study
                   </Link>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* ── Testimonials Section ─────────────────────────────────── */}
       <section className="testimonials section-padding" style={{ background: "var(--dark)", color: "white" }}>
         <div className="container">
-          <div className="text-center">
+          <FadeUp className="text-center">
             <div className="badge" style={{ background: "rgba(255,255,255,0.05)", color: "white" }}>Client Success</div>
             <h2 className="section-title" style={{ color: "white" }}>What Local Businesses Say</h2>
             <p className="section-subtitle" style={{ color: "rgba(255,255,255,0.6)" }}>
               Read reviews from companies that trusted our SEO strategies to dominate search engine results.
             </p>
-          </div>
+          </FadeUp>
 
           <div className="testimonial-grid">
-            <div className="testimonial-card">
+            <FadeUp delay={0.1} className="testimonial-card">
               <div style={{ display: "flex", gap: "5px", marginBottom: "20px" }}>
                 {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="var(--primary)" stroke="var(--primary)" />)}
               </div>
@@ -385,9 +408,9 @@ export default function Home() {
                 <h4 style={{ color: "white", fontSize: "1.1rem" }}>Rana Zafar</h4>
                 <p style={{ color: "var(--primary)", fontSize: "0.85rem", margin: 0 }}>Director, Multan Heights Real Estate</p>
               </div>
-            </div>
+            </FadeUp>
 
-            <div className="testimonial-card">
+            <FadeUp delay={0.2} className="testimonial-card">
               <div style={{ display: "flex", gap: "5px", marginBottom: "20px" }}>
                 {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="var(--primary)" stroke="var(--primary)" />)}
               </div>
@@ -398,25 +421,25 @@ export default function Home() {
                 <h4 style={{ color: "white", fontSize: "1.1rem" }}>Dr. H. Baig</h4>
                 <p style={{ color: "var(--primary)", fontSize: "0.85rem", margin: 0 }}>Chief Surgeon, Multan Dental Suite</p>
               </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
 
-      {/* Blog Preview Section */}
+      {/* ── Blog Preview Section ─────────────────────────────────── */}
       <section className="section-padding" id="blog">
         <div className="container">
-          <div className="text-center">
+          <FadeUp className="text-center">
             <div className="badge">SEO Resources</div>
             <h2 className="section-title">Latest Local SEO Insights</h2>
             <p className="section-subtitle">
               Read free SEO tutorials and guides on how to optimize your Multan or Pakistan-based business website.
             </p>
-          </div>
+          </FadeUp>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px", marginTop: "20px" }}>
             {blogPosts.map((post, idx) => (
-              <article key={idx} style={{ background: "white", border: "1px solid #eee", borderRadius: "20px", overflow: "hidden", display: "flex", flexDirection: "column", transition: "transform 0.3s ease" }}>
+              <FadeUp key={idx} delay={idx * 0.1} tag="article" className="blog-card-article" style={{ background: "white", border: "1px solid #eee", borderRadius: "20px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
                 <div style={{ padding: "30px", flexGrow: 1, display: "flex", flexDirection: "column" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "15px" }}>
                     <span>{post.date}</span>
@@ -427,18 +450,18 @@ export default function Home() {
                   </h3>
                   <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", lineHeight: "1.6", flexGrow: 1, marginBottom: "25px" }}>{post.desc}</p>
                   
-                  <Link href={post.path} style={{ display: "flex", alignItems: "center", gap: "8px", fontWeight: "600", color: "var(--primary)", textDecoration: "none", fontSize: "0.9rem" }}>
+                  <Link href={post.path} className="read-more-link">
                     Read Full Article <BookOpen size={16} />
                   </Link>
                 </div>
-              </article>
+              </FadeUp>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Strong CTA Section */}
-      <section style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
+      {/* ── Strong CTA Section ───────────────────────────────────── */}
+      <FadeUp tag="section" style={{ background: "linear-gradient(135deg, var(--navy) 0%, var(--dark-navy) 100%)", padding: "80px 0", color: "white", textAlign: "center" }}>
         <div className="container">
           <h2 style={{ fontSize: "2.8rem", fontWeight: "800", marginBottom: "20px", color: "white" }}>Ready to Scale Your Business?</h2>
           <p style={{ fontSize: "1.2rem", maxWidth: "650px", margin: "0 auto 40px", color: "rgba(255,255,255,0.9)", lineHeight: "1.7" }}>
@@ -464,13 +487,13 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </section>
+      </FadeUp>
 
-      {/* Contact Form Section */}
+      {/* ── Contact Form Section ─────────────────────────────────── */}
       <section className="section-padding" id="contact" style={{ background: "var(--light)" }}>
         <div className="container">
           <div className="contact-grid">
-            <div>
+            <FadeUp delay={0}>
               <div className="badge">Get In Touch</div>
               <h2 className="section-title" style={{ textAlign: "left", marginBottom: "20px" }}>
                 Claim Your Free SEO Audit Consultation
@@ -492,9 +515,9 @@ export default function Home() {
                   WhatsApp Us
                 </a>
               </div>
-            </div>
+            </FadeUp>
             
-            <div className="contact-card">
+            <FadeUp delay={0.15} className="contact-card">
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <input
@@ -539,7 +562,7 @@ export default function Home() {
                   )}
                 </button>
               </form>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>

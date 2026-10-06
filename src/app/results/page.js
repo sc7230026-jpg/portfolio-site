@@ -18,7 +18,6 @@ export default function Results() {
       description: "Ranked #1 for high-intent transactional keywords, resulting in a 240% increase in monthly organic traffic.",
       tag: "Organic Growth",
       chartHeights: ["30%", "45%", "65%", "95%"],
-      background: "#FFF7ED",
     },
     {
       title: "E-Commerce Organic Sales Boost",
@@ -60,7 +59,7 @@ export default function Results() {
                     alignItems: "flex-end",
                     height: "240px",
                     gap: "15px",
-                    background: study.background || "#F8F9FA",
+                    background: study.background || "var(--light)",
                   }}
                 >
                   {study.chartHeights.map((height, idx) => (

@@ -74,7 +74,7 @@ export default function BlogPage() {
                 display: "grid",
                 gridTemplateColumns: "1.1fr 1fr",
                 gap: "40px",
-                border: "1px solid rgba(20, 101, 216, 0.2)",
+                border: "1px solid rgba(16, 96, 208, 0.2)",
                 boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
               }}
             >
@@ -118,7 +118,7 @@ export default function BlogPage() {
               {/* Right Visual Image Placeholder */}
               <div
                 style={{
-                  background: "linear-gradient(135deg, #1f1f1f 0%, #121212 100%)",
+                  background: "linear-gradient(135deg, var(--dark) 0%, #001f3f 100%)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -133,8 +133,8 @@ export default function BlogPage() {
                     height: "100%",
                     minHeight: "260px",
                     borderRadius: "20px",
-                    background: "linear-gradient(135deg, rgba(20, 101, 216, 0.15) 0%, rgba(20, 101, 216, 0.02) 100%)",
-                    border: "2px dashed rgba(20, 101, 216, 0.4)",
+                    background: "linear-gradient(135deg, rgba(16, 96, 208, 0.15) 0%, rgba(16, 96, 208, 0.02) 100%)",
+                    border: "2px dashed rgba(16, 96, 208, 0.4)",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

@@ -176,7 +176,7 @@ export default function Services() {
                 <a href="tel:+923196902479" className="btn btn-primary" aria-label="Call Now: 03196902479">
                   <Phone size={16} /> Call Now
                 </a>
-                <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
                   WhatsApp
                 </a>
               </div>

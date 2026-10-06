@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollTop from "@/components/ScrollTop";
+import AhmadChatbot from "@/components/AhmadChatbot";
 
 export const metadata = {
   title: "Ahmad Local SEO Expert | Premium SEO Agency",
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <ScrollTop />
+        <AhmadChatbot />
       </body>
     </html>
   );

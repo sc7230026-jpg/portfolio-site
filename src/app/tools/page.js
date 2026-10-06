@@ -108,10 +108,10 @@ export default function Tools() {
       const topic = inputVal.trim();
       setResult(
         [
-          `🚀 10 Mind-Blowing Facts About ${topic} You Didn't Know`,
-          `💡 Ultimate Guide to Mastering ${topic} in 2026`,
-          `🔥 Why ${topic} is the Secret Weapon for Your Business Growth`,
-          `📈 How to Scale Your Results with ${topic} (A Case Study)`,
+          `10 Proven Strategies About ${topic} You Need to Know`,
+          `Ultimate Guide to Mastering ${topic} in 2026`,
+          `Why ${topic} is the Growth Driver for Your Business`,
+          `How to Scale Your Results with ${topic} (Case Study)`,
         ].join("\n\n")
       );
     } else if (activeTool === "faq-gen") {
@@ -131,12 +131,12 @@ export default function Tools() {
         [
           `Speed Analysis for: ${url}`,
           `------------------------------`,
-          `⚡ Performance Score: 98% (Excellent)`,
-          `⏰ First Contentful Paint: 0.4s`,
-          `🚀 Largest Contentful Paint: 0.8s`,
-          `✅ Cumulative Layout Shift: 0.01`,
+          `Performance Score: 98% (Excellent)`,
+          `First Contentful Paint: 0.4s`,
+          `Largest Contentful Paint: 0.8s`,
+          `Cumulative Layout Shift: 0.01`,
           `------------------------------`,
-          `Suggestions: Perfect speed! Images are properly deferred, CSS is minified, and next/image handles responsive resizing perfectly.`,
+          `Suggestions: Perfect speed! Images are properly deferred, CSS is minified, and responsive resizing is active.`,
         ].join("\n")
       );
     }
@@ -207,7 +207,7 @@ export default function Tools() {
                   color: "white",
                   padding: "15px 25px",
                   borderRadius: "15px",
-                  boxShadow: "0 10px 20px rgba(20, 101, 216,0.2)",
+                  boxShadow: "0 10px 20px rgba(16, 96, 208, 0.2)",
                   zIndex: 3,
                 }}
               >

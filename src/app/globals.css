@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
 
 /* 
-    Professional SEO Agency Design System
-    Color Palette: Navy Blue (#0B3A6E), Dark Navy (#062B52), Professional Blue (#1465D8), Bright Blue (#1E73E8), Light Blue (#EAF3FF), White (#FFFFFF)
-    Typography: Outfit (Headings), Inter (Body)
+    Ahmad Local SEO Expert - 3-Color Brand System
+    1. Dark Navy:  #003060 (Header, footer, dark sections, navigation)
+    2. Bright Blue: #1060D0 (Primary buttons, links, icons, highlights, CTAs)
+    3. White:      #FFFFFF (Main content backgrounds, cards, buttons, text)
 */
 
 :root {
-    --dark-navy: #062B52;
-    --navy: #0B3A6E;
-    --primary: #1465D8;
-    --primary-bright: #1E73E8;
-    --primary-glow: #EAF3FF;
-    --primary-glow-subtle: rgba(20, 101, 216, 0.08);
-    --dark: #062B52;
-    --dark-alt: #0B3A6E;
+    --dark-navy: #003060;
+    --navy: #003060;
+    --primary: #1060D0;
+    --primary-bright: #1060D0;
+    --primary-glow: rgba(16, 96, 208, 0.08);
+    --primary-glow-subtle: rgba(16, 96, 208, 0.04);
+    --dark: #003060;
+    --dark-alt: #003060;
     --white: #FFFFFF;
-    --text-main: #102A43;
-    --text-muted: #526579;
-    --border: #D9E7F5;
-    --light: #F5F9FF;
-    --light-blue: #EAF3FF;
+    --text-main: #003060;
+    --text-muted: rgba(0, 48, 96, 0.70);
+    --border: rgba(0, 48, 96, 0.12);
+    --light: #F8FAFD;
+    --light-blue: rgba(16, 96, 208, 0.08);
     --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    --shadow: 0 10px 30px rgba(6, 43, 82, 0.06);
-    --shadow-hover: 0 20px 40px rgba(6, 43, 82, 0.12);
+    --shadow: 0 10px 30px rgba(0, 48, 96, 0.06);
+    --shadow-hover: 0 20px 40px rgba(0, 48, 96, 0.12);
     --background: #FFFFFF;
-    --foreground: #102A43;
+    --foreground: #003060;
 }
 
 * {
@@ -93,11 +94,11 @@ section {
 }
 
 .btn-primary:hover {
-    background: var(--navy);
-    border-color: var(--navy);
+    background: var(--dark-navy);
+    border-color: var(--dark-navy);
     color: var(--white) !important;
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(20, 101, 216, 0.25);
+    box-shadow: 0 10px 25px rgba(16, 96, 208, 0.25);
 }
 
 .btn-primary:active {
@@ -115,7 +116,7 @@ section {
     color: var(--white) !important;
     border-color: var(--primary);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(20, 101, 216, 0.2);
+    box-shadow: 0 10px 25px rgba(16, 96, 208, 0.2);
 }
 
 .btn-outline:active {
@@ -126,7 +127,7 @@ section {
 .btn-call-nav {
     background: var(--white);
     color: var(--primary) !important;
-    border: 2px solid var(--border);
+    border: 2px solid var(--white);
 }
 
 .btn-call-nav:hover {
@@ -134,7 +135,7 @@ section {
     color: var(--white) !important;
     border-color: var(--primary);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(20, 101, 216, 0.2);
+    box-shadow: 0 8px 20px rgba(16, 96, 208, 0.2);
 }
 
 .btn-call-nav:active {
@@ -152,7 +153,7 @@ section {
     color: var(--white) !important;
     border-color: var(--primary);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(20, 101, 216, 0.2);
+    box-shadow: 0 10px 25px rgba(16, 96, 208, 0.2);
 }
 
 .btn-call-outline:active {
@@ -170,7 +171,7 @@ section {
     color: var(--white) !important;
     border-color: var(--dark-navy);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(6, 43, 82, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 48, 96, 0.3);
 }
 
 .btn-call-white:active {
@@ -188,7 +189,7 @@ section {
     color: var(--white) !important;
     border-color: var(--primary);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(20, 101, 216, 0.3);
+    box-shadow: 0 10px 25px rgba(16, 96, 208, 0.3);
 }
 
 .btn-call-dark:active {
@@ -215,15 +216,15 @@ section {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(6, 43, 82, 0.96);
+    background: rgba(0, 48, 96, 0.96);
     backdrop-filter: blur(15px);
     padding: 18px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: var(--transition);
 }
 
 .navbar.scrolled {
-    box-shadow: 0 10px 30px rgba(6, 43, 82, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 48, 96, 0.12);
 }
 
 .navbar .container {
@@ -320,7 +321,7 @@ section {
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 40px 100px rgba(6, 43, 82, 0.12);
+    box-shadow: 0 40px 100px rgba(0, 48, 96, 0.12);
     border: 8px solid white;
 }
 
@@ -332,7 +333,7 @@ section {
     display: flex;
     align-items: center;
     gap: 15px;
-    box-shadow: 0 20px 50px rgba(6, 43, 82, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 48, 96, 0.1);
     border: 1px solid var(--border);
     animation: float 4s ease-in-out infinite;
 }
@@ -372,7 +373,7 @@ section {
     color: var(--white);
     border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(20, 101, 216, 0.25);
+    box-shadow: 0 10px 20px rgba(16, 96, 208, 0.25);
 }
 
 /* Trusted By */
@@ -429,7 +430,7 @@ section {
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(6, 43, 82, 0.09);
+    box-shadow: 0 24px 48px rgba(0, 48, 96, 0.09);
     border-color: var(--primary);
 }
 
@@ -930,10 +931,10 @@ footer {
 /* Next.js custom adjustments */
 .scroll-top-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
+    bottom: 86px;
+    right: 24px;
+    width: 46px;
+    height: 46px;
     background: var(--primary);
     color: white;
     border: none;
@@ -942,39 +943,39 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 30px rgba(20, 101, 216, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 48, 96, 0.2);
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
-    z-index: 999;
+    z-index: 998;
 }
 .scroll-top-btn.visible {
     opacity: 1;
     visibility: visible;
 }
 .scroll-top-btn:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     background: var(--navy);
 }
-/* WhatsApp Button Override */
+/* WhatsApp Button Override - Pure white button, high-contrast, strictly 3-color brand palette */
 .btn-whatsapp {
     background: var(--white) !important;
     color: var(--primary) !important;
-    border: 2px solid var(--border) !important;
+    border: 2px solid var(--white) !important;
     transition: var(--transition);
 }
 .btn-whatsapp:hover {
-    background: var(--light-blue) !important;
-    color: var(--dark-navy) !important;
-    border-color: var(--border) !important;
+    background: var(--dark-navy) !important;
+    color: var(--white) !important;
+    border-color: var(--dark-navy) !important;
 }
 .btn-whatsapp svg {
     stroke: var(--primary) !important;
     color: var(--primary) !important;
 }
 .btn-whatsapp:hover svg {
-    stroke: var(--dark-navy) !important;
-    color: var(--dark-navy) !important;
+    stroke: var(--white) !important;
+    color: var(--white) !important;
 }
 .whatsapp-footer {
     background: var(--white) !important;
@@ -988,6 +989,672 @@ footer {
     transition: var(--transition);
 }
 .whatsapp-footer:hover {
-    background: var(--light-blue) !important;
-    color: var(--dark-navy) !important;
+    background: var(--primary) !important;
+    color: var(--white) !important;
 }
+
+/* ============================================================
+   ANIMATION SYSTEM
+   GPU-friendly: uses only transform + opacity.
+   No layout shifts. Respects prefers-reduced-motion.
+   ============================================================ */
+
+/* --- Keyframes --- */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Hero graphic: gentle continuous float */
+@keyframes heroFloat {
+    0%, 100% { transform: translateY(0px); }
+    50%       { transform: translateY(-12px); }
+}
+
+/* --- Scroll-triggered animation utility classes ---
+   JS adds .visible when element enters the viewport via IntersectionObserver. */
+.anim-fade-up {
+    opacity: 0;
+    transform: translateY(28px);
+}
+
+.anim-fade-up.visible {
+    animation: fadeUp 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--anim-delay, 0s);
+}
+
+.anim-fade-in {
+    opacity: 0;
+}
+
+.anim-fade-in.visible {
+    animation: fadeIn 0.7s ease both;
+    animation-delay: var(--anim-delay, 0s);
+}
+
+/* --- Hero elements: animate on load immediately (no scroll) --- */
+.hero-anim-0 { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0s both; }
+.hero-anim-1 { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both; }
+.hero-anim-2 { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both; }
+.hero-anim-3 { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.38s both; }
+.hero-anim-4 { animation: fadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both; }
+
+/* Hero graphic floating animation */
+.hero-graphic-float {
+    animation: heroFloat 6s ease-in-out infinite;
+}
+
+/* --- Service icon scale on card hover (CSS-only) --- */
+.service-icon {
+    transition: background var(--transition), transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+/* --- Blog card hover lift --- */
+.blog-card-article {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.blog-card-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 48, 96, 0.08);
+}
+
+/* Blog "Read More" link — arrow nudge on hover */
+.read-more-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.25s ease, gap 0.25s ease;
+}
+
+.read-more-link:hover {
+    color: var(--dark-navy);
+    gap: 12px;
+}
+
+/* --- Navbar link hover: underline slide-in effect --- */
+.nav-links a {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+/* --- WhatsApp / CTA button subtle lift --- */
+.btn-whatsapp:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(0, 48, 96, 0.2) !important;
+}
+
+/* --- Testimonial cards hover --- */
+.testimonial-card {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: rgba(16, 96, 208, 0.3);
+}
+
+/* --- Case card hover lift --- */
+.case-card {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 24px 50px rgba(0, 48, 96, 0.1);
+}
+
+/* ============================================================
+   MOBILE: Simplify animations on small screens
+   ============================================================ */
+@media (max-width: 640px) {
+    .anim-fade-up {
+        transform: translateY(16px);
+    }
+
+    .hero-graphic-float {
+        animation: none;
+    }
+
+    .anim-fade-up.visible {
+        animation-duration: 0.5s;
+        animation-delay: calc(var(--anim-delay, 0s) * 0.5);
+    }
+}
+
+/* ============================================================
+   PREFERS-REDUCED-MOTION: Suppress all animations
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+    }
+
+    .anim-fade-up,
+    .anim-fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .hero-anim-0, .hero-anim-1, .hero-anim-2,
+    .hero-anim-3, .hero-anim-4 {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    .hero-graphic-float {
+        animation: none !important;
+    }
+}
+
+/* ============================================================
+   Ahmad AI SEO Assistant Chatbot (3-Color Brand System)
+   1. White (#FFFFFF) - Chatbot background, cards, WhatsApp button
+   2. Dark Navy Blue (#003060) - Header, headings, user bubbles
+   3. Growth Green (#16A34A) - Conversion / Action CTA buttons
+   4. Light Gray (#F5F7FA) - AI bubbles, subtle UI borders
+   ============================================================ */
+
+.ahmad-chat-launcher {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #003060;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px 12px 14px;
+    box-shadow: 0 10px 30px rgba(0, 48, 96, 0.28);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.ahmad-chat-launcher:hover {
+    transform: translateY(-3px);
+    background: #002244;
+    box-shadow: 0 14px 36px rgba(0, 48, 96, 0.38);
+}
+
+.ahmad-chat-launcher:focus-visible {
+    outline: 2px solid #16A34A;
+    outline-offset: 3px;
+}
+
+.launcher-icon-box {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.launcher-sparkle {
+    color: #FFFFFF;
+}
+
+.launcher-text {
+    letter-spacing: 0.2px;
+}
+
+/* Chat Window */
+.ahmad-chat-window {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 380px;
+    max-width: calc(100vw - 32px);
+    height: 580px;
+    max-height: calc(100dvh - 32px);
+    z-index: 1001;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 48, 96, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 48, 96, 0.22);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    animation: chatWindowPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes chatWindowPop {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Chat Header */
+.chat-header {
+    background: #003060;
+    color: #FFFFFF;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.chat-header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.chat-avatar {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    flex-shrink: 0;
+}
+
+.chat-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF !important;
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Outfit', sans-serif;
+}
+
+.chat-subtitle {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+    background: #16A34A;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.chat-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.header-action-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header-action-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+}
+
+.header-action-btn:focus-visible {
+    outline: 2px solid #FFFFFF;
+}
+
+/* Quick CTA Banner */
+.chat-cta-bar {
+    background: #F5F7FA;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid rgba(0, 48, 96, 0.08);
+    flex-shrink: 0;
+}
+
+.chat-growth-cta {
+    background: #16A34A;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.chat-growth-cta:hover {
+    background: #15803D;
+    transform: translateY(-1px);
+}
+
+.chat-whatsapp-cta {
+    background: #FFFFFF !important;
+    color: #003060 !important;
+    border: 1px solid rgba(0, 48, 96, 0.2) !important;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.chat-whatsapp-cta:hover {
+    background: #003060 !important;
+    color: #FFFFFF !important;
+    border-color: #003060 !important;
+}
+
+/* Messages Area */
+.chat-messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+.chat-message-row {
+    display: flex;
+    width: 100%;
+}
+
+.chat-message-row.user-row {
+    justify-content: flex-end;
+}
+
+.chat-message-row.assistant-row {
+    justify-content: flex-start;
+}
+
+.chat-bubble {
+    max-width: 86%;
+    padding: 12px 15px;
+    border-radius: 16px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    word-break: break-word;
+}
+
+.user-bubble {
+    background: #003060;
+    color: #FFFFFF;
+    border-bottom-right-radius: 4px;
+}
+
+.assistant-bubble {
+    background: #F5F7FA;
+    color: #003060;
+    border: 1px solid rgba(0, 48, 96, 0.08);
+    border-bottom-left-radius: 4px;
+}
+
+.chat-bubble-text p {
+    margin: 4px 0;
+}
+
+.chat-bubble-text p:first-child {
+    margin-top: 0;
+}
+
+.chat-bubble-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Typing Indicator */
+.typing-bubble {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 16px;
+}
+
+.typing-dot {
+    width: 6px;
+    height: 6px;
+    background: #003060;
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: typingPulse 1.4s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingPulse {
+    0%, 60%, 100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+    30% {
+        transform: translateY(-4px);
+        opacity: 0.9;
+    }
+}
+
+/* Quick Prompts Chips */
+.chat-quick-prompts {
+    padding: 8px 14px;
+    background: #FFFFFF;
+    border-top: 1px solid rgba(0, 48, 96, 0.06);
+    flex-shrink: 0;
+}
+
+.quick-prompts-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(0, 48, 96, 0.6);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.chips-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.quick-chip-btn {
+    background: #F5F7FA;
+    color: #003060;
+    border: 1px solid rgba(0, 48, 96, 0.12);
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 0.76rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.quick-chip-btn:hover:not(:disabled) {
+    background: #003060;
+    color: #FFFFFF;
+    border-color: #003060;
+}
+
+.quick-chip-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Input Area */
+.chat-input-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    border-top: 1px solid rgba(0, 48, 96, 0.1);
+    flex-shrink: 0;
+}
+
+.chat-text-input {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 48, 96, 0.18);
+    border-radius: 100px;
+    padding: 10px 16px;
+    font-size: 0.88rem;
+    color: #003060;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.chat-text-input:focus {
+    border-color: #16A34A;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+}
+
+.chat-send-btn {
+    width: 38px;
+    height: 38px;
+    background: #16A34A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.chat-send-btn:hover:not(:disabled) {
+    background: #15803D;
+    transform: scale(1.05);
+}
+
+.chat-send-btn:disabled {
+    background: rgba(0, 48, 96, 0.18);
+    color: rgba(0, 48, 96, 0.4);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Footer Note */
+.chat-footer-note {
+    background: #F5F7FA;
+    padding: 6px 14px;
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgba(0, 48, 96, 0.6);
+    border-top: 1px solid rgba(0, 48, 96, 0.05);
+    flex-shrink: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .ahmad-chat-window {
+        bottom: 12px;
+        right: 12px;
+        left: 12px;
+        width: auto;
+        max-width: none;
+        height: calc(100dvh - 24px);
+        max-height: none;
+        border-radius: 16px;
+    }
+
+    .ahmad-chat-launcher {
+        bottom: 18px;
+        right: 18px;
+        padding: 10px 16px 10px 12px;
+        font-size: 0.88rem;
+    }
+
+    .scroll-top-btn {
+        bottom: 78px;
+        right: 18px;
+        width: 42px;
+        height: 42px;
+    }
+}
+

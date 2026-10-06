@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MapPin, Check, ArrowRight, TrendingUp, Search, Globe, Star, Phone, MessageSquare } from "lucide-react";
 
 export const metadata = {
-  title: "Local SEO Expert in Multan | Rank #1 on Google Maps | Ahmad SEO",
+  title: "Local SEO Expert in Multan | Rank #1 on Google Maps | Ahmad Local SEO Expert",
   description: "Professional Local SEO services in Multan, Pakistan. Dominate Google Maps, rank for local keywords, and generate more leads with data-driven local SEO strategies.",
 };
 
@@ -39,8 +39,8 @@ export default function LocalSeoMultan() {
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap" }}>
               <Link href="/#contact" className="btn btn-primary">Book Free Consultation <ArrowRight size={18} /></Link>
-              <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn" style={{ background: "var(--primary)", color: "white", border: "none" }}>
-                <MessageSquare size={18} fill="white" /> WhatsApp Now
+              <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+                <MessageSquare size={18} /> WhatsApp Now
               </a>
             </div>
           </div>

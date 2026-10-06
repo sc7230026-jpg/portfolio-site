@@ -57,7 +57,7 @@ export default function Contact() {
                 </a>
 
                 <a href="https://wa.me/923196902479" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: "15px", textDecoration: "none", color: "var(--dark)", padding: "20px", background: "var(--light)", borderRadius: "16px", transition: "0.3s" }}>
-                  <div style={{ width: "50px", height: "50px", background: "rgba(37, 211, 102, 0.1)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <div style={{ width: "50px", height: "50px", background: "var(--primary-glow)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <MessageSquare size={22} style={{ color: "var(--primary)" }} />
                   </div>
                   <div>
@@ -67,8 +67,8 @@ export default function Contact() {
                 </a>
 
                 <a href="mailto:musk01615@gmail.com" style={{ display: "flex", alignItems: "center", gap: "15px", textDecoration: "none", color: "var(--dark)", padding: "20px", background: "var(--light)", borderRadius: "16px", transition: "0.3s" }}>
-                  <div style={{ width: "50px", height: "50px", background: "rgba(59, 130, 246, 0.1)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Mail size={22} style={{ color: "#3B82F6" }} />
+                  <div style={{ width: "50px", height: "50px", background: "var(--primary-glow)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Mail size={22} style={{ color: "var(--primary)" }} />
                   </div>
                   <div>
                     <strong style={{ display: "block" }}>Email</strong>
@@ -77,8 +77,8 @@ export default function Contact() {
                 </a>
 
                 <div style={{ display: "flex", alignItems: "center", gap: "15px", padding: "20px", background: "var(--light)", borderRadius: "16px" }}>
-                  <div style={{ width: "50px", height: "50px", background: "rgba(220, 38, 38, 0.1)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <MapPin size={22} style={{ color: "#DC2626" }} />
+                  <div style={{ width: "50px", height: "50px", background: "var(--primary-glow)", borderRadius: "14px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <MapPin size={22} style={{ color: "var(--primary)" }} />
                   </div>
                   <div>
                     <strong style={{ display: "block" }}>Office Location</strong>
