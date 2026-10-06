@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50" fill="#E2E8F0" />
+  <!-- Boy Profile Avatar -->
+  <!-- Shoulders / Body -->
+  <path d="M20 90C20 73.4315 33.4315 60 50 60C66.5685 60 80 73.4315 80 90H20Z" fill="#003060" />
+  <!-- Neck -->
+  <rect x="44" y="46" width="12" height="16" fill="#FBBF24" opacity="0.8" rx="3" />
+  <!-- Head -->
+  <circle cx="50" cy="40" r="18" fill="#FDE68A" />
+  <!-- Hair (Boy Style) -->
+  <path d="M32 38C32 27.5 39 20 50 20C61 20 68 27.5 68 38C68 39 66 34 60 30C54 26 44 26 38 31C34 34 32 39 32 38Z" fill="#1E293B" />
+  <!-- Glasses/Eyes subtle detail -->
+  <circle cx="44" cy="39" r="2.5" fill="#1E293B" />
+  <circle cx="56" cy="39" r="2.5" fill="#1E293B" />
+  <!-- Smile -->
+  <path d="M46 47C48 49 52 49 54 47" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+</svg>

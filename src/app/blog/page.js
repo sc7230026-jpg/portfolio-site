@@ -297,7 +297,7 @@ export default function BlogPage() {
             Ready to Dominate Your Local Search Results?
           </h2>
           <p style={{ fontSize: "1.15rem", maxWidth: "650px", margin: "0 auto 40px", color: "rgba(255,255,255,0.9)", lineHeight: "1.7" }}>
-            Don&apos;t just read about SEO — let Ahmad SEO implement a custom, data-driven local SEO roadmap for your business.
+            Don&apos;t just read about SEO — let Ahmad Local SEO Expert implement a custom, data-driven local SEO roadmap for your business.
           </p>
           <div style={{ display: "flex", justifyContent: "center", gap: "20px", flexWrap: "wrap" }}>
             <Link href="/seo-audit" className="btn btn-call-white" style={{ padding: "16px 36px" }}>

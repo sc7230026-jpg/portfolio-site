@@ -1,4 +1,5 @@
 import { Award, ShieldAlert, BarChart3, Globe, ThumbsUp } from "lucide-react";
+import GoogleReviews from "@/components/GoogleReviews";
 
 export const metadata = {
   title: "SEO Results & Case Studies | Ahmad Local SEO Expert",
@@ -78,6 +79,9 @@ export default function Results() {
           </div>
         </div>
       </section>
+
+      {/* Verified Client Reviews */}
+      <GoogleReviews isDark={false} />
     </main>
   );
 }

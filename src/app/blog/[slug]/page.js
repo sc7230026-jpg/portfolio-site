@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Article Not Found | Ahmad SEO",
+      title: "Article Not Found | Ahmad Local SEO Expert",
       description: "The requested SEO article could not be found.",
     };
   }
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
   const canonicalUrl = `${siteUrl}/blog/${post.slug}`;
 
   return {
-    title: post.metaTitle || `${post.title} | Ahmad SEO`,
+    title: post.metaTitle || `${post.title} | Ahmad Local SEO Expert`,
     description: post.metaDescription || post.excerpt,
     alternates: {
       canonical: canonicalUrl,
@@ -222,7 +222,7 @@ export default async function BlogPostPage({ params }) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Ahmad SEO Agency",
+      name: "Ahmad Local SEO Expert",
       logo: {
         "@type": "ImageObject",
         url: "https://ahmad-seo-pro.vercel.app/favicon.ico",
@@ -317,7 +317,7 @@ export default async function BlogPostPage({ params }) {
           <div style={{ display: "flex", alignItems: "center", gap: "25px", paddingTop: "20px", borderTop: "1px solid #eee", color: "var(--text-muted)", fontSize: "0.9rem", flexWrap: "wrap" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--primary)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700", fontSize: "0.85rem" }}>
-                AS
+                AL
               </div>
               <span style={{ fontWeight: "600", color: "var(--dark)" }}>{post.author}</span>
             </div>
@@ -353,7 +353,7 @@ export default async function BlogPostPage({ params }) {
               <BookOpen size={32} />
             </div>
             <h2 style={{ fontSize: "1.6rem", color: "white", margin: 0, maxWidth: "600px" }}>{post.title}</h2>
-            <span style={{ color: "var(--primary)", fontWeight: "600", fontSize: "0.9rem" }}>Ahmad SEO Knowledge Hub • {post.category}</span>
+            <span style={{ color: "var(--primary)", fontWeight: "600", fontSize: "0.9rem" }}>Ahmad Local SEO Expert Knowledge Hub • {post.category}</span>
           </div>
         </div>
       </section>
@@ -417,7 +417,7 @@ export default async function BlogPostPage({ params }) {
               Need Help Implementing This Strategy?
             </h3>
             <p style={{ color: "var(--text-muted)", fontSize: "1.05rem", maxWidth: "600px", margin: "0 auto 25px", lineHeight: "1.6" }}>
-              Get in touch with Ahmad SEO for a free consultation. We help local and national businesses dominate Google search results.
+              Get in touch with Ahmad Local SEO Expert for a free consultation. We help local and national businesses dominate Google search results.
             </p>
             <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap" }}>
               <Link href="/seo-audit" className="btn btn-primary" style={{ padding: "14px 28px" }}>

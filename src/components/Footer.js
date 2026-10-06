@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
       <div className="container">
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "60px", paddingBottom: "60px" }}>
           <div>
-            <Link href="/" className="logo" style={{ color: "white", marginBottom: "25px", display: "block" }}>
-              Ahmad<span>SEO</span>
-            </Link>
+            <div style={{ marginBottom: "25px" }}>
+              <Logo variant="footer" />
+            </div>
             <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: "1.8", marginBottom: "30px" }}>
               Professional SEO Expert in Multan helping brands dominate Google search results and achieve measurable online growth through data-driven strategies.
             </p>

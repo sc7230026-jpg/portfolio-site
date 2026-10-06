@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -37,9 +38,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
-        <Link href="/" className="logo" onClick={closeMenu}>
-          Ahmad<span>SEO</span>
-        </Link>
+        <Logo variant="header" onClick={closeMenu} />
 
         {/* Desktop Links */}
         <ul className="nav-links">

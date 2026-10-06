@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 import CountUp from "@/components/CountUp";
+import GoogleReviews from "@/components/GoogleReviews";
 
 /* ─── Small helper: applies anim-fade-up + visible class + stagger delay ─── */
 function FadeUp({ children, delay = 0, className = "", style = {}, tag: Tag = "div" }) {
@@ -385,46 +386,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Testimonials Section ─────────────────────────────────── */}
-      <section className="testimonials section-padding" style={{ background: "var(--dark)", color: "white" }}>
-        <div className="container">
-          <FadeUp className="text-center">
-            <div className="badge" style={{ background: "rgba(255,255,255,0.05)", color: "white" }}>Client Success</div>
-            <h2 className="section-title" style={{ color: "white" }}>What Local Businesses Say</h2>
-            <p className="section-subtitle" style={{ color: "rgba(255,255,255,0.6)" }}>
-              Read reviews from companies that trusted our SEO strategies to dominate search engine results.
-            </p>
-          </FadeUp>
-
-          <div className="testimonial-grid">
-            <FadeUp delay={0.1} className="testimonial-card">
-              <div style={{ display: "flex", gap: "5px", marginBottom: "20px" }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="var(--primary)" stroke="var(--primary)" />)}
-              </div>
-              <p style={{ fontStyle: "italic", marginBottom: "25px", fontSize: "1.1rem", lineHeight: "1.7", color: "rgba(255,255,255,0.9)" }}>
-                &quot;Working with Ahmad was the best decision for our real estate business. We are ranking #1 for major local property search terms in Multan, and our monthly organic lead count has tripled!&quot;
-              </p>
-              <div className="client-info">
-                <h4 style={{ color: "white", fontSize: "1.1rem" }}>Rana Zafar</h4>
-                <p style={{ color: "var(--primary)", fontSize: "0.85rem", margin: 0 }}>Director, Multan Heights Real Estate</p>
-              </div>
-            </FadeUp>
-
-            <FadeUp delay={0.2} className="testimonial-card">
-              <div style={{ display: "flex", gap: "5px", marginBottom: "20px" }}>
-                {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="var(--primary)" stroke="var(--primary)" />)}
-              </div>
-              <p style={{ fontStyle: "italic", marginBottom: "25px", fontSize: "1.1rem", lineHeight: "1.7", color: "rgba(255,255,255,0.9)" }}>
-                &quot;Our clinic was virtually invisible on Google Maps. Ahmad reorganized our Google Business Profile and local citations. Now, we receive calls daily from patients finding us on Maps.&quot;
-              </p>
-              <div className="client-info">
-                <h4 style={{ color: "white", fontSize: "1.1rem" }}>Dr. H. Baig</h4>
-                <p style={{ color: "var(--primary)", fontSize: "0.85rem", margin: 0 }}>Chief Surgeon, Multan Dental Suite</p>
-              </div>
-            </FadeUp>
-          </div>
-        </div>
-      </section>
+      {/* ── Google Business Profile Reviews Section ────────────── */}
+      <GoogleReviews isDark={true} />
 
       {/* ── Blog Preview Section ─────────────────────────────────── */}
       <section className="section-padding" id="blog">

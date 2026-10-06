@@ -1,0 +1,11 @@
+<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Mark -->
+  <rect width="44" height="44" rx="12" fill="rgba(255,255,255,0.12)" />
+  <path d="M22 10C17.58 10 14 13.58 14 18C14 23.5 22 33 22 33C22 33 30 23.5 30 18C30 13.58 26.42 10 22 10Z" fill="#1060D0" />
+  <circle cx="22" cy="17.5" r="4.5" fill="#FFFFFF" />
+  <path d="M20 19V17M22 19V15M24 19V16" stroke="#003060" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- Brand Name Text -->
+  <text x="56" y="24" fill="#FFFFFF" font-family="Outfit, sans-serif" font-weight="800" font-size="20" letter-spacing="-0.5">Ahmad</text>
+  <text x="56" y="38" fill="rgba(255,255,255,0.8)" font-family="Inter, sans-serif" font-weight="700" font-size="10.5" letter-spacing="0.8" text-transform="uppercase">LOCAL SEO EXPERT</text>
+</svg>

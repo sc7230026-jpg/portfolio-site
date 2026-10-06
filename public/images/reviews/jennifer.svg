@@ -1,0 +1,19 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="50" fill="#FCE7F3" />
+  <!-- Girl Profile Avatar -->
+  <!-- Long Hair Background -->
+  <path d="M28 36C28 22 36 18 50 18C64 18 72 22 72 36C72 56 68 70 66 75H34C32 70 28 56 28 36Z" fill="#7C2D12" />
+  <!-- Shoulders / Blouse -->
+  <path d="M24 90C24 75 35 64 50 64C65 64 76 75 76 90H24Z" fill="#1060D0" />
+  <!-- Neck -->
+  <rect x="44" y="48" width="12" height="14" fill="#FBBF24" opacity="0.8" rx="3" />
+  <!-- Head -->
+  <circle cx="50" cy="40" r="17" fill="#FDE68A" />
+  <!-- Front Hair Styling -->
+  <path d="M33 34C33 24 40 20 50 20C60 20 67 24 67 34C60 28 54 28 50 32C46 28 40 28 33 34Z" fill="#9A3412" />
+  <!-- Eyes -->
+  <circle cx="44" cy="40" r="2.2" fill="#1E293B" />
+  <circle cx="56" cy="40" r="2.2" fill="#1E293B" />
+  <!-- Smile -->
+  <path d="M46 48C48 50 52 50 54 48" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+</svg>

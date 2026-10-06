@@ -406,7 +406,7 @@ export default function Tools() {
             <div className="faq-item">
               <div className="faq-question">Are these tools really free to use?</div>
               <div className="faq-answer">
-                Yes, all tools on AhmadSEO are completely free to use. We don&apos;t require any registration or payment to access our standard SEO and AI tools.
+                Yes, all tools on Ahmad Local SEO Expert are completely free to use. We don&apos;t require any registration or payment to access our standard SEO and AI tools.
               </div>
             </div>
             <div className="faq-item">

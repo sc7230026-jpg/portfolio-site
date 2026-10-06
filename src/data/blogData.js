@@ -20,11 +20,11 @@ export const blogPosts = [
     title: "What Is Local SEO? A Beginner's Guide to Ranking in Google Maps",
     excerpt: "Local SEO helps your business appear in local search results and Google Maps. Learn what local SEO is, how it works, and why every local business needs it.",
     category: "Local SEO",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 20, 2026",
     readTime: "8 min read",
     featured: true,
-    metaTitle: "What Is Local SEO? Beginner's Guide to Google Maps Ranking | Ahmad SEO",
+    metaTitle: "What Is Local SEO? Beginner's Guide to Google Maps Ranking | Ahmad Local SEO Expert",
     metaDescription: "Learn what Local SEO is, how it helps businesses rank in Google Maps and local search results, and the key strategies every local business owner should know.",
     content: `
 ## What Is Local SEO?
@@ -90,11 +90,11 @@ Local SEO is one of the most cost-effective marketing strategies for local busin
     title: "How to Optimize Your Google Business Profile for Local SEO",
     excerpt: "Your Google Business Profile is the most important free tool for local visibility. Learn how to fully optimize it for maximum local search rankings.",
     category: "Google Business Profile",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 18, 2026",
     readTime: "7 min read",
     featured: false,
-    metaTitle: "Google Business Profile Optimization Guide for Local SEO | Ahmad SEO",
+    metaTitle: "Google Business Profile Optimization Guide for Local SEO | Ahmad Local SEO Expert",
     metaDescription: "Step-by-step guide to optimizing your Google Business Profile for local SEO. Learn how to rank higher in Google Maps and the Local Pack.",
     content: `
 ## Why Your Google Business Profile Matters
@@ -141,11 +141,11 @@ Google Posts appear on your profile and signal to Google that your business is a
     title: "What Are Backlinks and Why Are They Important for SEO?",
     excerpt: "Backlinks are one of the most important ranking factors in SEO. Learn what they are, why they matter, and how to build quality backlinks for your website.",
     category: "Off-Page SEO",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 15, 2026",
     readTime: "6 min read",
     featured: false,
-    metaTitle: "What Are Backlinks? Why They Matter for SEO | Ahmad SEO",
+    metaTitle: "What Are Backlinks? Why They Matter for SEO | Ahmad Local SEO Expert",
     metaDescription: "Understand what backlinks are, why they're crucial for SEO rankings, and learn proven strategies to build high-quality backlinks to your website.",
     content: `
 ## What Are Backlinks?
@@ -180,11 +180,11 @@ Backlinks remain one of Google's top ranking signals:
     title: "On-Page SEO: Complete Guide for Beginners",
     excerpt: "Master the fundamentals of on-page SEO. Learn how to optimize your title tags, meta descriptions, headings, content, images, and internal links.",
     category: "On-Page SEO",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 12, 2026",
     readTime: "9 min read",
     featured: false,
-    metaTitle: "On-Page SEO Complete Guide for Beginners | Ahmad SEO",
+    metaTitle: "On-Page SEO Complete Guide for Beginners | Ahmad Local SEO Expert",
     metaDescription: "Learn on-page SEO fundamentals including title tags, meta descriptions, heading optimization, content strategy, image SEO, and internal linking best practices.",
     content: `
 ## What Is On-Page SEO?
@@ -221,11 +221,11 @@ On-page SEO refers to the practice of optimizing individual web pages to rank hi
     title: "How to Find the Right Keywords for Your Business",
     excerpt: "Keyword research is the foundation of SEO. Learn how to find profitable keywords that your potential customers are actually searching for.",
     category: "Keyword Research",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 10, 2026",
     readTime: "7 min read",
     featured: false,
-    metaTitle: "How to Find the Right SEO Keywords for Your Business | Ahmad SEO",
+    metaTitle: "How to Find the Right SEO Keywords for Your Business | Ahmad Local SEO Expert",
     metaDescription: "Step-by-step keyword research guide for businesses. Learn how to discover high-value keywords your customers are searching for and build a winning SEO strategy.",
     content: `
 ## Why Keyword Research Matters
@@ -251,11 +251,11 @@ Keyword research helps you identify the exact phrases potential buyers type into
     title: "Technical SEO Checklist for Small Businesses",
     excerpt: "Technical SEO ensures search engines can crawl and index your website properly. Use this checklist to identify and fix common technical SEO issues.",
     category: "Technical SEO",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 08, 2026",
     readTime: "8 min read",
     featured: false,
-    metaTitle: "Technical SEO Checklist for Small Businesses | Ahmad SEO",
+    metaTitle: "Technical SEO Checklist for Small Businesses | Ahmad Local SEO Expert",
     metaDescription: "Complete technical SEO checklist for small businesses. Learn how to fix crawling, indexing, speed, mobile, and security issues that affect your Google rankings.",
     content: `
 ## What Is Technical SEO?
@@ -285,11 +285,11 @@ Technical SEO focuses on server, rendering, and indexing optimizations that make
     title: "How to Improve Your Google Maps Ranking",
     excerpt: "Want your business to appear in the Google Maps Local 3-Pack? Here are proven strategies to boost your Google Maps visibility and attract more local customers.",
     category: "Google Business Profile",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 05, 2026",
     readTime: "6 min read",
     featured: false,
-    metaTitle: "How to Improve Your Google Maps Ranking | Ahmad SEO",
+    metaTitle: "How to Improve Your Google Maps Ranking | Ahmad Local SEO Expert",
     metaDescription: "Proven strategies to rank higher in Google Maps and the Local 3-Pack. Learn about GMB optimization, reviews, citations, and local SEO tactics that work.",
     content: `
 ## Why Google Maps Ranking Matters
@@ -309,11 +309,11 @@ The Google Maps 3-Pack is the most prominent position in local search. It captur
     title: "SEO vs Local SEO: What's the Difference?",
     excerpt: "SEO and Local SEO share common principles but target different audiences. Understand the key differences to choose the right strategy for your business.",
     category: "Local SEO",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "August 02, 2026",
     readTime: "5 min read",
     featured: false,
-    metaTitle: "SEO vs Local SEO: Key Differences Explained | Ahmad SEO",
+    metaTitle: "SEO vs Local SEO: Key Differences Explained | Ahmad Local SEO Expert",
     metaDescription: "Understand the differences between SEO and Local SEO, when to use each strategy, and which approach is best for your business type and goals.",
     content: `
 ## Understanding Traditional SEO vs Local SEO
@@ -332,11 +332,11 @@ Local SEO targets proximity-based queries like "near me" or "[service] in [city]
     title: "How Internal Linking Helps SEO",
     excerpt: "Internal links are one of the most underrated SEO strategies. Learn how proper internal linking improves rankings, user experience, and site structure.",
     category: "On-Page SEO",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "July 30, 2026",
     readTime: "5 min read",
     featured: false,
-    metaTitle: "How Internal Linking Helps SEO | Complete Guide | Ahmad SEO",
+    metaTitle: "How Internal Linking Helps SEO | Complete Guide | Ahmad Local SEO Expert",
     metaDescription: "Learn how internal linking improves your SEO rankings, helps search engines understand your site structure, and distributes page authority effectively.",
     content: `
 ## What Are Internal Links?
@@ -358,11 +358,11 @@ Internal links connect one page of your website to another page within the same 
     title: "How to Write SEO-Friendly Content",
     excerpt: "Writing for SEO doesn't mean stuffing keywords. Learn how to create content that ranks well on Google while providing genuine value to readers.",
     category: "Content Marketing",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "July 28, 2026",
     readTime: "7 min read",
     featured: false,
-    metaTitle: "How to Write SEO-Friendly Content That Ranks | Ahmad SEO",
+    metaTitle: "How to Write SEO-Friendly Content That Ranks | Ahmad Local SEO Expert",
     metaDescription: "Learn how to write content that ranks on Google. Practical tips for keyword usage, content structure, readability, and creating value-driven SEO content.",
     content: `
 ## What Makes Content SEO-Friendly?
@@ -381,11 +381,11 @@ SEO-friendly content satisfies both search engine indexing algorithms and human 
     title: "10 Best Free SEO Tools to Grow Your Online Visibility",
     excerpt: "Discover the top free SEO tools for keyword research, rank tracking, technical audits, and competitor analysis in 2026.",
     category: "SEO Tools",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "July 24, 2026",
     readTime: "6 min read",
     featured: false,
-    metaTitle: "10 Best Free SEO Tools to Grow Your Online Visibility | Ahmad SEO",
+    metaTitle: "10 Best Free SEO Tools to Grow Your Online Visibility | Ahmad Local SEO Expert",
     metaDescription: "Explore the best free SEO tools for keyword research, backlink checking, speed testing, and site auditing to boost your search rankings.",
     content: `
 ## Top Free SEO Tools for Every Business
@@ -405,11 +405,11 @@ You don't need an expensive enterprise software stack to improve your Google ran
     title: "Digital Marketing Strategies to Scale Local Businesses",
     excerpt: "Learn how combining Local SEO, Google Ads, and social media creates a high-converting lead generation engine for local companies.",
     category: "Digital Marketing",
-    author: "Ahmad SEO",
+    author: "Ahmad Local SEO Expert",
     date: "July 20, 2026",
     readTime: "7 min read",
     featured: false,
-    metaTitle: "Digital Marketing Strategies to Scale Local Businesses | Ahmad SEO",
+    metaTitle: "Digital Marketing Strategies to Scale Local Businesses | Ahmad Local SEO Expert",
     metaDescription: "Discover proven digital marketing strategies combining Local SEO, PPC advertising, and conversion optimization to scale local business revenue.",
     content: `
 ## Building an Integrated Digital Marketing Engine

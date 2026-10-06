@@ -26,7 +26,7 @@ export default function Contact() {
         <div className="container text-center">
           <div className="badge"><MapPin size={16} /> Get In Touch</div>
           <h1 style={{ fontSize: "3rem", marginBottom: "20px" }}>
-            Contact <span className="text-primary">Ahmad SEO Expert</span> in Multan
+            Contact <span className="text-primary">Ahmad Local SEO Expert</span> in Multan
           </h1>
           <p style={{ fontSize: "1.1rem", color: "var(--text-muted)", maxWidth: "650px", margin: "0 auto", lineHeight: "1.7" }}>
             Ready to grow your business with expert Local SEO services in Multan? Get in touch today for a free consultation and let&apos;s discuss your growth strategy.
