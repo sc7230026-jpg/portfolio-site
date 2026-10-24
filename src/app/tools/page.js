@@ -168,7 +168,7 @@ export default function Tools() {
                   background: "white",
                   padding: "30px",
                   borderRadius: "25px",
-                  boxShadow: "0 30px 60px rgba(0,0,0,0.1)",
+                  boxShadow: "0 30px 60px rgba(0, 48, 96, 0.1)",
                   width: "100%",
                   maxWidth: "400px",
                   position: "relative",
@@ -176,12 +176,12 @@ export default function Tools() {
                 }}
               >
                 <div style={{ display: "flex", gap: "15px", marginBottom: "20px" }}>
-                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#ff5f56" }}></div>
-                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#ffbd2e" }}></div>
-                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "#27c93f" }}></div>
+                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "rgba(0, 48, 96, 0.25)" }}></div>
+                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "rgba(0, 48, 96, 0.45)" }}></div>
+                  <div style={{ width: "12px", height: "12px", borderRadius: "50%", background: "var(--primary)" }}></div>
                 </div>
-                <div style={{ height: "10px", background: "#f0f0f0", borderRadius: "5px", width: "80%", marginBottom: "15px" }}></div>
-                <div style={{ height: "10px", background: "#f0f0f0", borderRadius: "5px", width: "60%", marginBottom: "15px" }}></div>
+                <div style={{ height: "10px", background: "rgba(0, 48, 96, 0.08)", borderRadius: "5px", width: "80%", marginBottom: "15px" }}></div>
+                <div style={{ height: "10px", background: "rgba(0, 48, 96, 0.08)", borderRadius: "5px", width: "60%", marginBottom: "15px" }}></div>
                 <div
                   style={{
                     height: "100px",
@@ -196,7 +196,7 @@ export default function Tools() {
                 >
                   <Gauge style={{ width: "40px", height: "40px", color: "var(--primary)" }} />
                 </div>
-                <div style={{ height: "10px", background: "#f0f0f0", borderRadius: "5px", width: "90%" }}></div>
+                <div style={{ height: "10px", background: "rgba(0, 48, 96, 0.08)", borderRadius: "5px", width: "90%" }}></div>
               </div>
               <div
                 style={{
@@ -247,7 +247,7 @@ export default function Tools() {
                     padding: "20px",
                     background: activeTool === t.id ? "var(--primary)" : "white",
                     color: activeTool === t.id ? "white" : "var(--dark)",
-                    border: "1px solid #eee",
+                    border: "1px solid rgba(0, 48, 96, 0.12)",
                     borderRadius: "15px",
                     cursor: "pointer",
                     textAlign: "left",
@@ -340,7 +340,7 @@ export default function Tools() {
                           fontFamily: "monospace",
                           whiteSpace: "pre-wrap",
                           fontSize: "0.9rem",
-                          border: "1px solid #ddd",
+                          border: "1px solid rgba(0, 48, 96, 0.12)",
                         }}
                       >
                         {result}

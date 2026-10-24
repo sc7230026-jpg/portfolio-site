@@ -213,7 +213,7 @@ export default function Home() {
                   borderRadius: "30px",
                   background: "linear-gradient(135deg, var(--dark) 0%, var(--dark-alt) 100%)",
                   padding: "40px",
-                  boxShadow: "0 30px 60px rgba(0,0,0,0.15)",
+                  boxShadow: "0 30px 60px rgba(0, 48, 96, 0.15)",
                   border: "2px solid rgba(16, 96, 208, 0.2)"
                 }}
               >
@@ -346,7 +346,7 @@ export default function Home() {
 
           <div className="case-grid">
             {caseStudies.map((cs, idx) => (
-              <FadeUp key={idx} delay={idx * 0.15} className="case-card" style={{ background: "white", borderRadius: "24px", overflow: "hidden", border: "1px solid #eee" }}>
+              <FadeUp key={idx} delay={idx * 0.15} className="case-card" style={{ background: "white", borderRadius: "24px", overflow: "hidden", border: "1px solid rgba(0, 48, 96, 0.12)" }}>
                 <div style={{ background: "var(--dark)", padding: "30px", color: "white" }}>
                   <span className="case-tag" style={{ background: "var(--primary-glow)", color: "var(--primary)", marginBottom: "15px" }}>{cs.niche}</span>
                   <h3 style={{ fontSize: "1.8rem", color: "white", margin: 0 }}>{cs.growth}</h3>
@@ -357,11 +357,11 @@ export default function Home() {
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "30px", background: "var(--light)", padding: "20px", borderRadius: "16px" }}>
                     <div>
                       <span style={{ fontSize: "0.8rem", color: "var(--text-muted)", display: "block" }}>BEFORE</span>
-                      <strong style={{ fontSize: "0.9rem", color: "#DC2626" }}>{cs.before}</strong>
+                      <strong style={{ fontSize: "0.9rem", color: "var(--text-muted)" }}>{cs.before}</strong>
                     </div>
                     <div>
                       <span style={{ fontSize: "0.8rem", color: "var(--text-muted)", display: "block" }}>AFTER</span>
-                      <strong style={{ fontSize: "0.9rem", color: "#16A34A" }}>{cs.after}</strong>
+                      <strong style={{ fontSize: "0.9rem", color: "var(--primary)" }}>{cs.after}</strong>
                     </div>
                   </div>
 
@@ -402,7 +402,7 @@ export default function Home() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "30px", marginTop: "20px" }}>
             {blogPosts.map((post, idx) => (
-              <FadeUp key={idx} delay={idx * 0.1} tag="article" className="blog-card-article" style={{ background: "white", border: "1px solid #eee", borderRadius: "20px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+              <FadeUp key={idx} delay={idx * 0.1} tag="article" className="blog-card-article" style={{ background: "white", border: "1px solid rgba(0, 48, 96, 0.12)", borderRadius: "20px", overflow: "hidden", display: "flex", flexDirection: "column" }}>
                 <div style={{ padding: "30px", flexGrow: 1, display: "flex", flexDirection: "column" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "var(--text-muted)", marginBottom: "15px" }}>
                     <span>{post.date}</span>

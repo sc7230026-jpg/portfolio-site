@@ -32,7 +32,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Categories Filter Section */}
-      <section style={{ padding: "20px 0 40px", borderBottom: "1px solid #eee", background: "white" }}>
+      <section style={{ padding: "20px 0 40px", borderBottom: "1px solid rgba(0, 48, 96, 0.12)", background: "white" }}>
         <div className="container">
           <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center" }}>
             {blogCategories.map((cat) => (
@@ -42,7 +42,7 @@ export default function BlogPage() {
                 style={{
                   padding: "10px 20px",
                   borderRadius: "100px",
-                  border: selectedCategory === cat ? "1px solid var(--primary)" : "1px solid #e5e5e5",
+                  border: selectedCategory === cat ? "1px solid var(--primary)" : "1px solid rgba(0, 48, 96, 0.15)",
                   background: selectedCategory === cat ? "var(--primary)" : "var(--light)",
                   color: selectedCategory === cat ? "white" : "var(--dark)",
                   fontWeight: "600",
@@ -74,8 +74,8 @@ export default function BlogPage() {
                 display: "grid",
                 gridTemplateColumns: "1.1fr 1fr",
                 gap: "40px",
-                border: "1px solid rgba(16, 96, 208, 0.2)",
-                boxShadow: "0 25px 50px rgba(0,0,0,0.15)",
+                border: "1px solid rgba(0, 48, 96, 0.2)",
+                boxShadow: "0 25px 50px rgba(0, 48, 96, 0.15)",
               }}
             >
               {/* Left Content */}
@@ -118,7 +118,7 @@ export default function BlogPage() {
               {/* Right Visual Image Placeholder */}
               <div
                 style={{
-                  background: "linear-gradient(135deg, var(--dark) 0%, #001f3f 100%)",
+                  background: "var(--dark)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -133,8 +133,8 @@ export default function BlogPage() {
                     height: "100%",
                     minHeight: "260px",
                     borderRadius: "20px",
-                    background: "linear-gradient(135deg, rgba(16, 96, 208, 0.15) 0%, rgba(16, 96, 208, 0.02) 100%)",
-                    border: "2px dashed rgba(16, 96, 208, 0.4)",
+                    background: "rgba(16, 96, 208, 0.08)",
+                    border: "2px dashed rgba(16, 96, 208, 0.3)",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -174,7 +174,7 @@ export default function BlogPage() {
                 key={post.slug}
                 style={{
                   background: "white",
-                  border: "1px solid #eee",
+                  border: "1px solid rgba(0, 48, 96, 0.12)",
                   borderRadius: "24px",
                   overflow: "hidden",
                   display: "flex",
@@ -188,7 +188,7 @@ export default function BlogPage() {
                   style={{
                     height: "180px",
                     background: "linear-gradient(135deg, var(--light) 0%, var(--light) 100%)",
-                    borderBottom: "1px solid #eee",
+                    borderBottom: "1px solid rgba(0, 48, 96, 0.12)",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -221,7 +221,7 @@ export default function BlogPage() {
                       fontWeight: "700",
                       padding: "4px 12px",
                       borderRadius: "100px",
-                      boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                      boxShadow: "0 2px 8px rgba(0, 48, 96, 0.08)",
                     }}
                   >
                     {post.category}
@@ -231,7 +231,7 @@ export default function BlogPage() {
                       position: "absolute",
                       bottom: "16px",
                       right: "16px",
-                      background: "rgba(0,0,0,0.7)",
+                      background: "rgba(0, 48, 96, 0.85)",
                       color: "white",
                       fontSize: "0.75rem",
                       padding: "3px 10px",
@@ -267,7 +267,7 @@ export default function BlogPage() {
                     {post.excerpt}
                   </p>
 
-                  <div style={{ paddingTop: "18px", borderTop: "1px solid #f2f2f2", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <div style={{ paddingTop: "18px", borderTop: "1px solid rgba(0, 48, 96, 0.12)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <Link
                       href={`/blog/${post.slug}`}
                       style={{

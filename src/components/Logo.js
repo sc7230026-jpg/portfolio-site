@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 export default function Logo({ variant = "header", onClick }) {
-  const isFooter = variant === "footer";
-  const primaryTextColor = isFooter ? "#FFFFFF" : "#003060";
+  const isDarkBg = variant === "header" || variant === "footer";
+  const primaryTextColor = isDarkBg ? "#FFFFFF" : "#003060";
   const accentColor = "#1060D0";
-  const subTextColor = isFooter ? "rgba(255, 255, 255, 0.75)" : "#1060D0";
+  const subTextColor = isDarkBg ? "rgba(255, 255, 255, 0.9)" : "#003060";
 
   return (
     <Link
@@ -28,7 +28,12 @@ export default function Logo({ variant = "header", onClick }) {
         xmlns="http://www.w3.org/2000/svg"
         style={{ flexShrink: 0 }}
       >
-        <rect width="40" height="40" rx="10" fill={isFooter ? "rgba(255,255,255,0.12)" : "#003060"} />
+        <rect
+          width="40"
+          height="40"
+          rx="10"
+          fill={isDarkBg ? "rgba(255,255,255,0.12)" : "#003060"}
+        />
         {/* Subtle Map Pin / Search / Chart combination */}
         <path
           d="M20 9C15.58 9 12 12.58 12 17C12 22.25 20 31 20 31C20 31 28 22.25 28 17C28 12.58 24.42 9 20 9Z"

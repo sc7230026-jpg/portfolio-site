@@ -56,12 +56,12 @@ export default function GoogleReviews({ isDark = false }) {
             <div
               key={rev.id}
               style={{
-                background: isDark ? "rgba(255,255,255,0.04)" : "#F8FAFD",
+                background: isDark ? "rgba(255,255,255,0.06)" : "#FFFFFF",
                 borderRadius: "20px",
                 padding: "26px",
                 border: isDark
-                  ? "1px solid rgba(255,255,255,0.08)"
-                  : "1px solid rgba(0, 48, 96, 0.08)",
+                  ? "1px solid rgba(255,255,255,0.1)"
+                  : "1px solid rgba(0, 48, 96, 0.12)",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
@@ -135,7 +135,7 @@ export default function GoogleReviews({ isDark = false }) {
                         {rev.status && (
                           <span
                             style={{
-                              background: "#16A34A",
+                              background: "#1060D0",
                               color: "#FFFFFF",
                               fontSize: "0.68rem",
                               fontWeight: "700",
@@ -172,7 +172,7 @@ export default function GoogleReviews({ isDark = false }) {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                      boxShadow: "0 2px 6px rgba(0, 48, 96, 0.1)",
                       flexShrink: 0,
                     }}
                   >
@@ -228,13 +228,13 @@ export default function GoogleReviews({ isDark = false }) {
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "5px",
-                    color: "#1060D0",
+                    color: isDark ? "#FFFFFF" : "#1060D0",
                     fontSize: "0.8rem",
                     fontWeight: "600",
                     textDecoration: "none",
                   }}
                 >
-                  View on Google <ExternalLink size={12} />
+                  View on Google <ExternalLink size={12} style={{ color: "#1060D0" }} />
                 </a>
               </div>
             </div>

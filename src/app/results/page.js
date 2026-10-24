@@ -81,7 +81,7 @@ export default function Results() {
       </section>
 
       {/* Verified Client Reviews */}
-      <GoogleReviews isDark={false} />
+      <GoogleReviews isDark={true} />
     </main>
   );
 }

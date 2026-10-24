@@ -48,10 +48,10 @@ export default function SeoAudit() {
             </div>
 
             {/* Multi-Step Audit Form */}
-            <div style={{ background: "white", padding: "40px", borderRadius: "24px", boxShadow: "0 30px 60px rgba(0,0,0,0.08)", border: "1px solid #eee" }}>
+            <div style={{ background: "white", padding: "40px", borderRadius: "24px", boxShadow: "0 30px 60px rgba(0, 48, 96, 0.08)", border: "1px solid rgba(0, 48, 96, 0.12)" }}>
               {submitted ? (
                 <div style={{ textAlign: "center", padding: "40px 0" }}>
-                  <CheckCircle size={60} style={{ color: "#16A34A", marginBottom: "20px" }} />
+                  <CheckCircle size={60} style={{ color: "var(--primary)", marginBottom: "20px" }} />
                   <h3 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>Audit Request Received!</h3>
                   <p style={{ color: "var(--text-muted)" }}>We will deliver your free SEO audit report within 48 hours. Check your email!</p>
                 </div>
@@ -61,7 +61,7 @@ export default function SeoAudit() {
                   <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", marginBottom: "25px" }}>Step {step} of 2</p>
 
                   {/* Progress Bar */}
-                  <div style={{ background: "#eee", height: "6px", borderRadius: "3px", marginBottom: "30px" }}>
+                  <div style={{ background: "rgba(0, 48, 96, 0.1)", height: "6px", borderRadius: "3px", marginBottom: "30px" }}>
                     <div style={{ background: "var(--primary)", height: "100%", borderRadius: "3px", width: step === 1 ? "50%" : "100%", transition: "width 0.4s ease" }}></div>
                   </div>
 

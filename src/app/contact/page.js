@@ -99,7 +99,7 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div style={{ background: "white", padding: "45px", borderRadius: "24px", boxShadow: "0 30px 60px rgba(0,0,0,0.08)", border: "1px solid #eee" }}>
+            <div style={{ background: "white", padding: "45px", borderRadius: "24px", boxShadow: "0 30px 60px rgba(0, 48, 96, 0.08)", border: "1px solid rgba(0, 48, 96, 0.12)" }}>
               <h3 style={{ fontSize: "1.4rem", marginBottom: "5px" }}>Send Us a Message</h3>
               <p style={{ color: "var(--text-muted)", fontSize: "0.9rem", marginBottom: "30px" }}>Fill out the form and we&apos;ll respond within 24 hours.</p>
 

@@ -86,7 +86,7 @@ export default function Packages() {
                 key={index}
                 className="service-card"
                 style={{
-                  border: plan.highlight ? "3px solid var(--primary)" : "1px solid #EEEEEE",
+                  border: plan.highlight ? "3px solid var(--primary)" : "1px solid rgba(0, 48, 96, 0.12)",
                   position: "relative",
                   transform: plan.highlight ? "scale(1.03)" : "none",
                   boxShadow: plan.highlight ? "0 20px 40px rgba(16, 96, 208, 0.15)" : "var(--shadow)",

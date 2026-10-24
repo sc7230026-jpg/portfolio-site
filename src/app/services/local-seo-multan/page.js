@@ -127,7 +127,7 @@ export default function LocalSeoMultan() {
               { q: "How much does Local SEO cost in Multan?", a: "Our Local SEO packages start from PKR 25,000/month. The exact pricing depends on competition, number of keywords, and the scope of optimization needed." },
               { q: "Will I rank on Google Maps in Multan?", a: "Yes! Google Maps ranking is a core focus of our Local SEO strategy. We optimize your Google Business Profile, build local citations, and generate reviews to help you rank in the Local 3-Pack." },
             ].map((faq, i) => (
-              <div key={i} style={{ background: "white", padding: "30px", borderRadius: "16px", border: "1px solid #eee", marginBottom: "15px" }}>
+              <div key={i} style={{ background: "white", padding: "30px", borderRadius: "16px", border: "1px solid rgba(0, 48, 96, 0.12)", marginBottom: "15px" }}>
                 <h3 style={{ fontSize: "1.1rem", marginBottom: "10px", color: "var(--dark)" }}>{faq.q}</h3>
                 <p style={{ color: "var(--text-muted)", lineHeight: "1.7", fontSize: "0.95rem", margin: 0 }}>{faq.a}</p>
               </div>

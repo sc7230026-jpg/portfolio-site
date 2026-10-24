@@ -89,11 +89,11 @@ function ArticleContent({ content }) {
 
       elements.push(
         <div key={`table-wrapper-${elements.length}`} style={{ overflowX: "auto", margin: "30px 0" }}>
-          <table style={{ width: "100%", borderCollapse: "collapse", border: "1px solid #eee", fontSize: "0.95rem" }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", border: "1px solid rgba(0, 48, 96, 0.12)", fontSize: "0.95rem" }}>
             <thead>
               <tr style={{ background: "var(--light)" }}>
                 {headerRow.map((cell, idx) => (
-                  <th key={idx} style={{ padding: "14px 18px", textAlign: "left", border: "1px solid #eee", fontWeight: "700" }}>
+                  <th key={idx} style={{ padding: "14px 18px", textAlign: "left", border: "1px solid rgba(0, 48, 96, 0.12)", fontWeight: "700" }}>
                     {cell}
                   </th>
                 ))}
@@ -103,7 +103,7 @@ function ArticleContent({ content }) {
               {dataRows.map((row, rIdx) => (
                 <tr key={rIdx} style={{ background: rIdx % 2 === 0 ? "white" : "var(--light)" }}>
                   {row.map((cell, cIdx) => (
-                    <td key={cIdx} style={{ padding: "12px 18px", border: "1px solid #eee" }}>
+                    <td key={cIdx} style={{ padding: "12px 18px", border: "1px solid rgba(0, 48, 96, 0.12)" }}>
                       {cell}
                     </td>
                   ))}
@@ -177,7 +177,7 @@ function ArticleContent({ content }) {
     // Regular paragraph
     flushList();
     elements.push(
-      <p key={`p-${index}`} style={{ fontSize: "1.08rem", lineHeight: "1.85", color: "#333", marginBottom: "22px" }}>
+      <p key={`p-${index}`} style={{ fontSize: "1.08rem", lineHeight: "1.85", color: "var(--dark-navy)", marginBottom: "22px" }}>
         {trimmed}
       </p>
     );
@@ -314,7 +314,7 @@ export default async function BlogPostPage({ params }) {
           </h1>
 
           {/* Author & Meta bar */}
-          <div style={{ display: "flex", alignItems: "center", gap: "25px", paddingTop: "20px", borderTop: "1px solid #eee", color: "var(--text-muted)", fontSize: "0.9rem", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "25px", paddingTop: "20px", borderTop: "1px solid rgba(0, 48, 96, 0.12)", color: "var(--text-muted)", fontSize: "0.9rem", flexWrap: "wrap" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <div style={{ width: "32px", height: "32px", borderRadius: "50%", background: "var(--primary)", color: "white", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700", fontSize: "0.85rem" }}>
                 AL
@@ -336,9 +336,9 @@ export default async function BlogPostPage({ params }) {
               width: "100%",
               height: "320px",
               borderRadius: "24px",
-              background: "linear-gradient(135deg, var(--dark) 0%, #001f3f 100%)",
-              border: "1px solid rgba(16, 96, 208, 0.2)",
-              boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
+              background: "var(--dark)",
+              border: "1px solid rgba(0, 48, 96, 0.2)",
+              boxShadow: "0 20px 40px rgba(0, 48, 96, 0.08)",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -368,7 +368,7 @@ export default async function BlogPostPage({ params }) {
                 background: "var(--light)",
                 padding: "30px",
                 borderRadius: "20px",
-                border: "1px solid #e5e5e5",
+                border: "1px solid rgba(0, 48, 96, 0.12)",
                 marginBottom: "45px",
               }}
             >
@@ -442,7 +442,7 @@ export default async function BlogPostPage({ params }) {
 
       {/* Related Posts Section */}
       {relatedPosts.length > 0 && (
-        <section className="section-padding" style={{ background: "var(--light)", borderTop: "1px solid #eee" }}>
+        <section className="section-padding" style={{ background: "var(--light)", borderTop: "1px solid rgba(0, 48, 96, 0.12)" }}>
           <div className="container" style={{ maxWidth: "1100px" }}>
             <div style={{ textAlign: "center", marginBottom: "40px" }}>
               <h2 className="section-title" style={{ marginBottom: "10px" }}>Related Articles</h2>
@@ -456,7 +456,7 @@ export default async function BlogPostPage({ params }) {
                   style={{
                     background: "white",
                     borderRadius: "20px",
-                    border: "1px solid #eee",
+                    border: "1px solid rgba(0, 48, 96, 0.12)",
                     padding: "30px",
                     display: "flex",
                     flexDirection: "column",

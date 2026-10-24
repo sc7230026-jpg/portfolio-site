@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
 
 /* 
-    Ahmad Local SEO Expert - 3-Color Brand System
-    1. Dark Navy:  #003060 (Header, footer, dark sections, navigation)
-    2. Bright Blue: #1060D0 (Primary buttons, links, icons, highlights, CTAs)
-    3. White:      #FFFFFF (Main content backgrounds, cards, buttons, text)
+    Ahmad Local SEO Expert - Premium SEO Brand Color System
+    1. White:         #FFFFFF (Main content backgrounds, cards, inputs, text on dark)
+    2. Dark Navy:     #003060 (Header, footer, dark sections, headings, text)
+    3. Bright Blue:   #1060D0 (Primary CTA buttons, links, icons, highlights, active states)
 */
 
 :root {
+    --color-navy: #003060;
+    --color-blue: #1060D0;
+    --color-white: #FFFFFF;
     --dark-navy: #003060;
     --navy: #003060;
     --primary: #1060D0;
     --primary-bright: #1060D0;
-    --primary-glow: rgba(16, 96, 208, 0.08);
-    --primary-glow-subtle: rgba(16, 96, 208, 0.04);
+    --primary-glow: rgba(16, 96, 208, 0.10);
+    --primary-glow-subtle: rgba(16, 96, 208, 0.05);
     --dark: #003060;
     --dark-alt: #003060;
     --white: #FFFFFF;
     --text-main: #003060;
     --text-muted: rgba(0, 48, 96, 0.70);
     --border: rgba(0, 48, 96, 0.12);
-    --light: #F8FAFD;
+    --light: #FFFFFF;
     --light-blue: rgba(16, 96, 208, 0.08);
     --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     --shadow: 0 10px 30px rgba(0, 48, 96, 0.06);
@@ -94,8 +97,8 @@ section {
 }
 
 .btn-primary:hover {
-    background: var(--dark-navy);
-    border-color: var(--dark-navy);
+    background: rgba(16, 96, 208, 0.9);
+    border-color: rgba(16, 96, 208, 0.9);
     color: var(--white) !important;
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(16, 96, 208, 0.25);
@@ -125,17 +128,17 @@ section {
 
 /* Specific High-Contrast Call Button Classes */
 .btn-call-nav {
-    background: var(--white);
-    color: var(--primary) !important;
-    border: 2px solid var(--white);
+    background: var(--primary);
+    color: var(--white) !important;
+    border: 2px solid var(--primary);
 }
 
 .btn-call-nav:hover {
-    background: var(--primary) !important;
+    background: rgba(16, 96, 208, 0.9) !important;
     color: var(--white) !important;
-    border-color: var(--primary);
+    border-color: rgba(16, 96, 208, 0.9);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(16, 96, 208, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 48, 96, 0.2);
 }
 
 .btn-call-nav:active {
@@ -680,7 +683,7 @@ section {
     margin-bottom: 25px;
     transition: var(--transition);
     position: relative;
-    box-shadow: 0 4px 15px rgba(6, 43, 82, 0.04);
+    box-shadow: 0 4px 15px rgba(0, 48, 96, 0.04);
 }
 
 .process-item:hover .process-icon-wrapper {
@@ -752,7 +755,7 @@ section {
     background: var(--white);
     padding: 50px;
     border-radius: 32px;
-    box-shadow: 0 30px 100px rgba(6, 43, 82, 0.06);
+    box-shadow: 0 30px 100px rgba(0, 48, 96, 0.06);
     border: 1px solid var(--border);
 }
 
@@ -781,6 +784,13 @@ footer {
     background: var(--dark-navy);
     padding: 100px 0 40px;
     color: var(--white);
+}
+
+footer a:hover {
+    color: var(--white) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--primary);
+    text-underline-offset: 4px;
 }
 
 .footer-grid {
@@ -844,7 +854,7 @@ footer {
 }
 .tool-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(6, 43, 82, 0.08);
+    box-shadow: 0 15px 30px rgba(0, 48, 96, 0.08);
     border-color: var(--primary);
 }
 .tool-icon {
@@ -957,11 +967,11 @@ footer {
     transform: translateY(-4px);
     background: var(--navy);
 }
-/* WhatsApp Button Override - Pure white button, high-contrast, strictly 3-color brand palette */
+/* WhatsApp Button - White background, Navy border/icon */
 .btn-whatsapp {
     background: var(--white) !important;
-    color: var(--primary) !important;
-    border: 2px solid var(--white) !important;
+    color: var(--dark-navy) !important;
+    border: 2px solid rgba(0, 48, 96, 0.25) !important;
     transition: var(--transition);
 }
 .btn-whatsapp:hover {
@@ -970,16 +980,16 @@ footer {
     border-color: var(--dark-navy) !important;
 }
 .btn-whatsapp svg {
-    stroke: var(--primary) !important;
-    color: var(--primary) !important;
+    stroke: var(--dark-navy) !important;
+    color: var(--dark-navy) !important;
 }
 .btn-whatsapp:hover svg {
     stroke: var(--white) !important;
     color: var(--white) !important;
 }
 .whatsapp-footer {
-    background: var(--white) !important;
-    color: var(--primary) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #FFFFFF !important;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -990,7 +1000,7 @@ footer {
 }
 .whatsapp-footer:hover {
     background: var(--primary) !important;
-    color: var(--white) !important;
+    color: #FFFFFF !important;
 }
 
 /* ============================================================
@@ -1130,7 +1140,7 @@ footer {
 
 .testimonial-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 48, 96, 0.15);
     border-color: rgba(16, 96, 208, 0.3);
 }
 
@@ -1199,8 +1209,8 @@ footer {
    Ahmad AI SEO Assistant Chatbot (3-Color Brand System)
    1. White (#FFFFFF) - Chatbot background, cards, WhatsApp button
    2. Dark Navy Blue (#003060) - Header, headings, user bubbles
-   3. Growth Green (#16A34A) - Conversion / Action CTA buttons
-   4. Light Gray (#F5F7FA) - AI bubbles, subtle UI borders
+   3. Bright Blue (#1060D0) - Conversion / Action CTA buttons
+   Subtle UI borders & surfaces: transparent versions of approved #003060
    ============================================================ */
 
 .ahmad-chat-launcher {
@@ -1226,12 +1236,12 @@ footer {
 
 .ahmad-chat-launcher:hover {
     transform: translateY(-3px);
-    background: #002244;
+    background: rgba(0, 48, 96, 0.9);
     box-shadow: 0 14px 36px rgba(0, 48, 96, 0.38);
 }
 
 .ahmad-chat-launcher:focus-visible {
-    outline: 2px solid #16A34A;
+    outline: 2px solid #1060D0;
     outline-offset: 3px;
 }
 
@@ -1335,7 +1345,7 @@ footer {
 .status-dot {
     width: 7px;
     height: 7px;
-    background: #16A34A;
+    background: #1060D0;
     border-radius: 50%;
     display: inline-block;
 }
@@ -1370,7 +1380,7 @@ footer {
 
 /* Quick CTA Banner */
 .chat-cta-bar {
-    background: #F5F7FA;
+    background: #FFFFFF;
     padding: 8px 14px;
     display: flex;
     align-items: center;
@@ -1381,7 +1391,7 @@ footer {
 }
 
 .chat-growth-cta {
-    background: #16A34A;
+    background: #1060D0;
     color: #FFFFFF !important;
     text-decoration: none;
     font-size: 0.8rem;
@@ -1395,14 +1405,14 @@ footer {
 }
 
 .chat-growth-cta:hover {
-    background: #15803D;
+    background: rgba(16, 96, 208, 0.9);
     transform: translateY(-1px);
 }
 
 .chat-whatsapp-cta {
-    background: #FFFFFF !important;
-    color: #003060 !important;
-    border: 1px solid rgba(0, 48, 96, 0.2) !important;
+    background: var(--white) !important;
+    color: var(--dark-navy) !important;
+    border: 1px solid rgba(0, 48, 96, 0.25) !important;
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 600;
@@ -1411,13 +1421,13 @@ footer {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, transform 0.2s;
 }
 
 .chat-whatsapp-cta:hover {
-    background: #003060 !important;
-    color: #FFFFFF !important;
-    border-color: #003060 !important;
+    background: var(--dark-navy) !important;
+    color: var(--white) !important;
+    transform: translateY(-1px);
 }
 
 /* Messages Area */
@@ -1461,7 +1471,7 @@ footer {
 }
 
 .assistant-bubble {
-    background: #F5F7FA;
+    background: rgba(0, 48, 96, 0.04);
     color: #003060;
     border: 1px solid rgba(0, 48, 96, 0.08);
     border-bottom-left-radius: 4px;
@@ -1540,7 +1550,7 @@ footer {
 }
 
 .quick-chip-btn {
-    background: #F5F7FA;
+    background: rgba(0, 48, 96, 0.04);
     color: #003060;
     border: 1px solid rgba(0, 48, 96, 0.12);
     border-radius: 100px;
@@ -1588,14 +1598,14 @@ footer {
 }
 
 .chat-text-input:focus {
-    border-color: #16A34A;
-    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.12);
+    border-color: #1060D0;
+    box-shadow: 0 0 0 3px rgba(16, 96, 208, 0.12);
 }
 
 .chat-send-btn {
     width: 38px;
     height: 38px;
-    background: #16A34A;
+    background: #1060D0;
     color: #FFFFFF;
     border: none;
     border-radius: 50%;
@@ -1608,7 +1618,7 @@ footer {
 }
 
 .chat-send-btn:hover:not(:disabled) {
-    background: #15803D;
+    background: rgba(16, 96, 208, 0.9);
     transform: scale(1.05);
 }
 
@@ -1621,7 +1631,7 @@ footer {
 
 /* Footer Note */
 .chat-footer-note {
-    background: #F5F7FA;
+    background: #FFFFFF;
     padding: 6px 14px;
     text-align: center;
     font-size: 0.7rem;
